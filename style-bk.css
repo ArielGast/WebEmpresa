@@ -20,7 +20,7 @@ body {
     "Lateral Principal" 
     "Pie Pie";
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 190px 1fr 80px; 
+    grid-template-rows: 120px 1fr 150px; 
 } 
 header {
     grid-area: Encabezado;
@@ -35,6 +35,7 @@ header {
 }
 .header__nav__img {
     width: 100%;
+    margin-left: 5%;
 }
 
 .header__nav__ul {
@@ -83,12 +84,13 @@ header {
     font-weight: 800;
     padding-top: 15%;
 }
-
+main {
+    width: 98%;
+}
 .main__index__article {
     grid-area: Principal;
     width: 100%;
-    justify-content: left;
-}
+} 
 
 .main__index__article h1 {
     font-size: 4.5rem;
@@ -99,7 +101,7 @@ header {
     text-shadow: 2px 3px rgb(72, 14, 104);
 }
 
-.main__index__section {
+.main__index__article__section2 {
     width: 100%;
 }
 
@@ -109,30 +111,28 @@ header {
     margin: 2% auto;
     font-size: 3.5rem;
     font-weight: 600;
-    color: rgb(119, 77, 57);
+    color: rgb(133, 119, 113);
     text-transform: uppercase;
-    text-shadow: 3px 3px yellowgreen;
+    text-shadow: 3px 3px rgb(107, 157, 223);
 }
 
 .main__index__article__section p {
     text-align:center;
     margin-top: 2%;
     width: 100%;
-    color: rgb(235, 231, 34);
+    color: rgb(235, 162, 28);
     font-size: 1.5rem;
     font-weight: 500;
 }
 .main__index__article__section2__div {
     display: grid;
     grid-template-columns: 2fr 1fr 2fr;
-    /* width: 100%; */
     justify-content: space-between;
     align-items: center;
 }
 
 .main__index__article__section2__div2__ul {
     list-style: none;
-    text-align: center;
 }
 .main__index__article__section2__div1__img1,
 .main__index__article__section2__div3__img1{
@@ -143,21 +143,117 @@ header {
 .main__index__article__section2__div2__ul li {
     padding-top: 5%;
     padding-right: 2%;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: rgb(247, 168, 21);
     font-weight: 700;
+    text-align:center;
 }
 .footer {
     grid-area: Pie;
-    margin-top: 3%;
+    margin-top: 5%;
+    margin-left: 2%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+.footer__div {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-items: flex-start;
+}
+
+.footer__div span {
+    color: rgb(48, 7, 95);
+    font-size: 0.8rem;
 }
 .footer__ul {
     display: flex;
     list-style: none;
-    width: 80vw;
+    /* width: 80vw; */
 }
 .footer__ul li {
-    margin-left: 20%;
+    margin-left: 20px;
+    font-size: 4rem;
+} 
+.footer__ul__li__a {
+    color: rgb(241, 42, 28);
+    padding: auto;
+}
+/* Media Querie Index */
+
+@media screen and (max-width: 768px) {
+    .body__index {
+        grid-template-rows: 60px 1fr 85px; 
+    } 
+    .header__nav__ul li a {
+        font-size: 1rem;
+    }
+    .article__aside h3 {
+        font-size: 1rem;
+    }
+    .article__aside__ul li {
+        font-size: 0.8rem;
+    }
+    .main__index__article h1 {
+        font-size: 2rem;
+    }
+    .main__index__article__section h2,
+    .main__index__article__section2 h2 {
+    font-size: 1.5rem;
+    text-shadow: 1px 1px rgb(107, 157, 223);
+    }
+    .main__index__article__section p {
+        font-size: 0.8rem;
+    }
+    .main__index__article__section2__div2__ul li {
+        font-size: 0.8rem;
+    }
+    .footer__ul li {
+        font-size: 2rem;
+    } 
+    .footer__img {
+        width: 70%;
+    }
+    .footer__div span {
+        font-size: 0.6rem;
+    }
+}
+@media screen and (max-width: 320px) {
+    .body__index {
+        grid-template-rows: 25px 1fr 50px; 
+    } 
+    .header__nav__ul li a {
+        font-size: 0.5rem;
+    }
+    .article__aside h3 {
+        font-size: 0.7rem;
+    }
+    .article__aside__ul li {
+        font-size: 0.3rem;
+    }
+    .main__index__article h1 {
+        font-size: 0.8rem;
+    }
+    .main__index__article__section h2,
+    .main__index__article__section2 h2 {
+    font-size: 0.9rem;
+    text-shadow: 1px 1px rgb(107, 157, 223);
+    }
+    .main__index__article__section p {
+        font-size: 0.4rem;
+    }
+    .main__index__article__section2__div2__ul li {
+        font-size: 0.3rem;
+    }
+    .footer__ul li {
+        font-size: 1rem;
+    } 
+    .footer__img {
+        width: 40%;
+    }
+    .footer__div span {
+        font-size: 0.3rem;
+    }
 }
