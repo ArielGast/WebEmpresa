@@ -6,19 +6,26 @@
 body {
     font-family: 'Lato', sans-serif;
     font-family: 'Roboto', sans-serif;
-    background-image: url(./imagenes/logo-verde.png);
+    background: rgb(230,200,171);
+    background: linear-gradient(90deg, rgba(230,200,171,1) 0%, rgba(94,56,150,1) 46%, rgba(8,48,56,1) 100%);
     background-attachment: fixed;
     background-size: cover;
     width: 100vw;
-    z-index: 0;
 } 
 
-img {
-    width: 100%;
+.body__index {
+    display: grid;
+    grid-template-areas: 
+    "Encabezado Encabezado"
+    "Lateral Principal" 
+    "Pie Pie";
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 190px 1fr 80px; 
+} 
+header {
+    grid-area: Encabezado;
 }
-
 .header__nav {
-    margin-top: 0;
     display: flex;
     width: 95vw;
 }
@@ -40,98 +47,117 @@ img {
 .header__nav__ul li {
     text-decoration: none;
     padding: 1%;
-    font-size: 1.5rem;
+    font-weight: 600;
 }
 .header__nav__ul li a {
     text-decoration: none;
-    color:rgb(135, 29, 221);
-    transition: all ease-in-out;
-    font-size: 1.3rem;
+    color:rgb(179, 139, 219);
+    transition:  0.6s all ease-in-out;
+    font-size: 1.5rem;
     font-style: italic;
-
 }
+
 .header__nav__ul li a:hover {
     color:rgb(247, 168, 21);
 }
-
-.main__index__div {
-    margin-top: 15%;
-    display: grid;
+.article__aside {
+    grid-area: Lateral;
     width: 100%;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: 1fr;
 }
 
-.main__index__div__section h1 {
+.article__aside h3 {
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+}
+
+.article__aside__ul {
+    list-style: none;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.article__aside__ul li {
+    font-size: 1.5rem;
+    font-weight: 800;
+    padding-top: 15%;
+}
+
+.main__index__article {
+    grid-area: Principal;
+    width: 100%;
+    justify-content: left;
+}
+
+.main__index__article h1 {
     font-size: 4.5rem;
     font-weight: 600;
     font-style: oblique;
-    color: rgb(137, 250, 61);
+    color: rgb(253, 253, 253);
     text-align: center;
-    text-shadow: 2px 2px rgb(196, 182, 182);
+    text-shadow: 2px 3px rgb(72, 14, 104);
 }
 
 .main__index__section {
-    width: 95%;
-
+    width: 100%;
 }
 
-.main__index__section h2,
-.main__index__section2 h2 {
+.main__index__article__section h2,
+.main__index__article__section2 h2 {
     text-align: center;
-    margin: 5% auto;
+    margin: 2% auto;
     font-size: 3.5rem;
     font-weight: 600;
-    color: rgb(157, 88, 236);
+    color: rgb(119, 77, 57);
     text-transform: uppercase;
+    text-shadow: 3px 3px yellowgreen;
 }
 
-.main__index__section p {
+.main__index__article__section p {
     text-align:center;
     margin-top: 2%;
     width: 100%;
-    color: rgb(135, 29, 221);
+    color: rgb(235, 231, 34);
     font-size: 1.5rem;
     font-weight: 500;
 }
-.main__index__section2__div {
+.main__index__article__section2__div {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 100%;
+    grid-template-columns: 2fr 1fr 2fr;
+    /* width: 100%; */
     justify-content: space-between;
     align-items: center;
 }
 
-.main__index__section2__div2__ul {
+.main__index__article__section2__div2__ul {
     list-style: none;
     text-align: center;
 }
-.main__index__section2__div1__img1,
-.main__index__section2__div3__img1{
+.main__index__article__section2__div1__img1,
+.main__index__article__section2__div3__img1{
     opacity: 0.8;
+    width: 100%;
 }
 
-.main__index__section2__div2__ul li {
+.main__index__article__section2__div2__ul li {
     padding-top: 5%;
     padding-right: 2%;
-    font-size: 2rem;
+    font-size: 1.4rem;
     color: rgb(247, 168, 21);
     font-weight: 700;
 }
-
-.footer__div {
-    margin-top: 3%;
+.footer {
     grid-area: Pie;
+    margin-top: 3%;
     display: flex;
     align-items: center;
 }
-
-.footer__div__ul {
+.footer__ul {
     display: flex;
     list-style: none;
     width: 80vw;
 }
-.footer__div__ul li {
-    margin-left: 20% ;
+.footer__ul li {
+    margin-left: 20%;
 }
