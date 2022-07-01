@@ -1,0 +1,137 @@
+/* CSS para todas las páginas */
+* {
+    margin:0;
+    padding: 0;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-image: url(./imagenes/logo-verde.png);
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100vw;
+    z-index: 0;
+} 
+
+img {
+    width: 100%;
+}
+
+.header__nav {
+    margin-top: 0;
+    display: flex;
+    width: 95vw;
+}
+
+.header__nav a {
+    width: 20vw;
+}
+.header__nav__img {
+    width: 100%;
+}
+
+.header__nav__ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+.header__nav__ul li {
+    text-decoration: none;
+    padding: 1%;
+    font-size: 1.5rem;
+}
+.header__nav__ul li a {
+    text-decoration: none;
+    color:rgb(135, 29, 221);
+    transition: all ease-in-out;
+    font-size: 1.3rem;
+    font-style: italic;
+
+}
+.header__nav__ul li a:hover {
+    color:rgb(247, 168, 21);
+}
+
+.main__index__div {
+    margin-top: 15%;
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+}
+
+.main__index__div__section h1 {
+    font-size: 4.5rem;
+    font-weight: 600;
+    font-style: oblique;
+    color: rgb(137, 250, 61);
+    text-align: center;
+    text-shadow: 2px 2px rgb(196, 182, 182);
+}
+
+.main__index__section {
+    width: 95%;
+
+}
+
+.main__index__section h2,
+.main__index__section2 h2 {
+    text-align: center;
+    margin: 5% auto;
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: rgb(157, 88, 236);
+    text-transform: uppercase;
+}
+
+.main__index__section p {
+    text-align:center;
+    margin-top: 2%;
+    width: 100%;
+    color: rgb(135, 29, 221);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.main__index__section2__div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main__index__section2__div2__ul {
+    list-style: none;
+    text-align: center;
+}
+.main__index__section2__div1__img1,
+.main__index__section2__div3__img1{
+    opacity: 0.8;
+}
+
+.main__index__section2__div2__ul li {
+    padding-top: 5%;
+    padding-right: 2%;
+    font-size: 2rem;
+    color: rgb(247, 168, 21);
+    font-weight: 700;
+}
+
+.footer__div {
+    margin-top: 3%;
+    grid-area: Pie;
+    display: flex;
+    align-items: center;
+}
+
+.footer__div__ul {
+    display: flex;
+    list-style: none;
+    width: 80vw;
+}
+.footer__div__ul li {
+    margin-left: 20% ;
+}

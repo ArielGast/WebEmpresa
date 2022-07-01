@@ -1,0 +1,232 @@
+* { /*reset*/
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background: url(./imagenes/bg3.jpg);
+    width: 100%;
+} 
+
+
+header {
+    grid-area: Encabezado;
+}
+/* .header__nav {
+    display: flex;
+    justify-content: space-between;
+} */
+.header__nav__img {
+    width: 400px;
+}
+.header__nav__ul {
+    display: flex; 
+    list-style: none;
+    justify-content:flex-end;
+    align-items: center;
+}
+.header__nav__ul li {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0px 0px 0px 10px;
+}
+.header__nav__ul li a {
+    text-decoration: none;
+    color:rgb(20, 97, 212);
+} 
+.header__nav__ul li a:hover {
+    color: #3735d3;
+    font-size: 19.5px;
+    text-shadow: 1px 1px rgb(157, 82, 167);
+}
+.footer {
+    margin-top: 10%;
+} 
+.footer__div {
+    display: flex;
+    justify-content: flex-start; 
+} 
+.footer__div__img {
+    width: 25%;
+}
+.footer__div__ul {
+    display:flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+.footer__div__ul__li__a {
+    padding: 10px;
+}
+.footer__div__ul__li__a__imgInst,
+.footer__div__ul__li__a__imgLink {
+    width: 50px;
+}
+.footer span{
+    color:#b4b4bb;
+    font-size: 12px;
+    font-weight: 500;
+    padding-left: 20px;
+}
+/* index */
+.body__index {
+    display: grid;
+    grid-template-areas: 
+    "Encabezado"
+    "Aside" "Principal" "Aside"
+    "Principal"
+    "Pie";
+    
+}
+
+.main__section1 {
+    width: 100%;
+}
+.main__section1__img {
+    width: 49%;
+    display: inline-block;
+    padding: 3px;
+    border-radius: 20px;
+}
+.main__section1 h1,
+.contacto__main h1,
+.productos__main h1,
+.ubicacion__main h1,
+.tutoriales__main h1 {
+    font-size: 60px;
+    font-style: italic;
+    text-align: center;
+    text-shadow: 3px 3px black;
+    padding: 40px;
+    color:rgb(20, 97, 212);
+    margin-bottom: 50px;
+}
+.main__section2 h2,
+.main__section3 h2 {
+    text-align: center;
+    color: #b4b4bb;
+    font-size: 50px;
+    padding: 30px;
+    text-transform: uppercase;
+}
+.main__section2 p {
+    font-size: 25px;
+    font-style: italic;
+    text-align: justify;
+    padding: 2%;
+    color:#c3c6e7;
+}
+.container-flex {
+    display: flex;
+    flex-direction: row-reverse;
+} 
+.main__section3__div1__img1,
+.main__section3__div1__img2 {
+    width: 100%;
+    padding: 5px;
+    align-items: flex-start;
+    border-radius: 20px;
+}
+ .main__section3__div2__ul li {
+    list-style: disc;
+    font-size: 40px;
+    color: #3735d3; 
+    padding: 28px;
+    font-weight: 700;
+ }
+.main__section3__div3__img1,
+.main__section3__div3__img2 {
+    width: 58%;
+    padding: 2px;
+    align-items: flex-end;
+    border-radius: 20px;
+}
+/* contacto */
+
+.contacto__main__section {
+    display: flex;
+    justify-content: space-evenly;
+}
+.contacto__main__section__img {
+    width: 300px;
+    padding-left: 30px;
+}
+.contacto__section__form {
+    color: #b4b4bb;
+    font-weight: 500;
+    margin-top: 40px;
+    width: fit-content;
+    height: fit-content;
+    font-size: 18px;
+    margin-left: 40%;
+    border: 2px solid rgb(139, 139, 139);
+    border-radius: 10px;
+    padding: 5px;
+} 
+.contacto__form__div {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    justify-content: center;
+}
+.contacto__form__label {
+    padding: 10px;
+}
+.contacto__form__input {
+    height: 25px;
+    width: 200px;
+}
+.contacto__form__textarea {
+    height: 200px;
+}
+/* productos */
+
+.productos__main__section1__article--reverse{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.productos__main__section1__article {
+    display: flex;
+    align-items: center;
+}
+.productos__main__section1__img {
+    width: 250px;
+}
+.productos__main__section1__article--reverse p,
+.productos__main__section1__article p {
+    font-size: 18px;
+    color: rgb(255, 187, 0);
+}
+/* ubicacion */
+
+.ubicacion__main__section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ubicacion__main__section p {
+    font-size: 20x;
+    font-weight: 400;
+    padding: 20px;
+    color: #b4b4bb;
+}
+.ubicacion__main__section p a {
+    text-decoration: none;
+    color:#3735d3;
+    text-transform: uppercase;
+}
+/* galeria */
+
+.tutoriales__main__section__div1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.tutoriales__main__section__div2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
