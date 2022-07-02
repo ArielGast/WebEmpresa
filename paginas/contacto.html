@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/252fd0e7cb.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../imagenes/Isotipo2.png">
     <link rel="stylesheet"  href="../style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>DURATEC - CONTACTO</title>
 </head>
-<body>
+<body class="body">
     <header>
         <nav class="header__nav">
             <a href ="../index.html"> <img class="header__nav__img" src="../imagenes/logo-duratec-2.png" alt="logo Duratec"></a> 
@@ -30,16 +31,16 @@
             <img class="contacto__main__section__img" src="../imagenes/Contacto1.jpeg" alt="Contactanos">
             <img class="contacto__main__section__img" src="../imagenes/contacto2.jpg" alt="contactanos">
         </section>
-        <form class="contacto__section__form">
-                <div class="contacto__form__div">
-                    <label class="contacto__form__label" for="nombre" >Nombre / Razón Social</label>
-                    <input class="contacto__form__input" type="text" id="nombre" placeholder="Nombre/Razón Social">
-                    <label class="contacto__form__label" for="email">Email</label>
-                    <input class="contacto__form__input" type="email" id="email" placeholder="example@mail.com">
-                    <label class="contacto__form__label" for="mensaje">Tu Mensaje</label>
-                    <textarea class="contacto__form__textarea" id="mensaje" placeholder="Dejanos tu mensaje" cols="30" row="520"></textarea>
+        <form class="contacto__main__form">
+                <div class="contacto__main__form__div">
+                    <label class="contacto__main__form__label" for="nombre" >Nombre / Razón Social</label>
+                    <input class="contacto__main__form__input" type="text" id="nombre" placeholder="Nombre/Razón Social">
+                    <label class="contacto__main__form__label" for="email">Email</label>
+                    <input class="contacto__main__form__input" type="email" id="email" placeholder="example@mail.com">
+                    <label class="contacto__main__form__label" for="mensaje">Tu Mensaje</label>
+                    <textarea class="contacto__main__form__textarea" id="mensaje" placeholder="Dejanos tu mensaje" cols="30" row="520"></textarea>
                     <div>
-                        <label class="contacto__form__label">Sos Cliente?</label>
+                        <label class="contacto__main__form__label">Sos Cliente?</label>
                         <label for="sicliente">Si</label>
                         <input type="radio" id="sicliente" name="cliente">
                         <label for="nocliente">No</label>
@@ -52,15 +53,15 @@
                 </div>
             </form>
     </main>
-    <footer class="footer">
-        <div class="footer__div">
-            <img class="footer__div__img" src="../imagenes/logo-Strato.png" alt="logo empresa">
-            <ul class="footer__div__ul">
-                <li><a class ="footer__div__ul__li__a" href="https://www.instagram.com/duratec.oficial" target="_blank"><img class="footer__div__ul__li__a__imgInst" src="../imagenes/instagram-logo.png" alt="Instagram"></a></li>
-                <li><a class ="footer__div__ul__li__a" href="https://www.linkedin.com/in/stratosrl" target="_blank"><img class="footer__div__ul__li__a__imgLink" src="../imagenes/linkedin-logo.png" alt="Linkedin"></a></li>
-            </ul>
+    <footer class="footer__sinGrid">
+        <div class="footer__sinGrid__div">
+            <img class="footer__sinGrid__div__img" src="../imagenes/logo-Strato.png" alt="logo empresa">
+            <span>Todos los derechos reservados</span>
         </div>
-        <span>Todos los derechos reservados</span>
+        <ul class="footer__sinGrid__ul">
+            <li><a class ="footer__sinGrid__ul__li__a" href="https://www.instagram.com/duratec.oficial" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a class ="footer__sinGrid__ul__li__a" href="https://www.linkedin.com/in/stratosrl" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+        </ul>
     </footer>
 </body>
 </html>

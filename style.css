@@ -109,7 +109,8 @@ main {
 .main__index__article__section2 h2,
 .productos__main h1,
 .tutoriales__main h1,
-.ubicacion__main h1 {
+.ubicacion__main h1,
+.contacto__main h1 {
     text-align: center;
     margin: 2% auto;
     font-size: 56px;
@@ -240,7 +241,6 @@ main {
     width: 100%;
     height: 100%;
 }
-
 .video1 {
     grid-row: 1 / 4;
     width: 100%;
@@ -270,6 +270,45 @@ main {
     color: red;
     text-decoration: none;
 }
+/* CONTACTO */
+.contacto__main__section {
+    display: flex;
+    justify-content: space-evenly;
+}
+.contacto__main__section__img {
+    width: 300px;
+    padding-left: 20px;
+}
+.contacto__main__form__div {
+    color: #b4b4bb;
+    font-weight: 500;
+    margin-top: 40px;
+    width: fit-content;
+    height: fit-content;
+    font-size: 18px;
+    margin-left: 40%;
+    border: 2px solid rgb(139, 139, 139);
+    border-radius: 10px;
+    padding: 5px;
+} 
+.contacto__main__form__div {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    justify-content: center;
+}
+.contacto__main__form__label {
+    padding: 10px;
+}
+.contacto__main__form__input {
+    height: 25px;
+    width: 200px;
+}
+.contacto__main__form__textarea {
+    height: 200px;
+}
+
+
 
 /* Media Querie 768px */
 
@@ -293,7 +332,8 @@ main {
     .main__index__article__section2 h2,
     .productos__main h1,
     .tutoriales__main h1,
-    .ubicacion__main h1 {
+    .ubicacion__main h1,
+    .contacto__main h1 {
         font-size: 24px;
         text-shadow: 1px 1px rgb(107, 157, 223);
     }
@@ -363,7 +403,8 @@ main {
     .main__index__article__section2 h2,
     .productos__main h1,
     .tutoriales__main h1,
-    .ubicacion__main h1 {
+    .ubicacion__main h1,
+    .contacto__main h1 {
         font-size: 15px;
         text-shadow: 1px 1px rgb(107, 157, 223);
     }
@@ -412,5 +453,26 @@ main {
     }
     .ubicacion__main__section__div p {
         font-size: 8px;
+    }
+    .contacto__main__section__img {
+        display: none;
+    }
+    .contacto__main__form__div {
+        margin-top: 20px;
+        width: fit-content;
+        height: fit-content;
+        font-size: 12px;
+        margin-left: 10%;
+        padding: 2px;
+    } 
+    .contacto__main__form__label {
+        padding: 5px;
+    }
+    .contacto__main__form__input {
+        height: 25px;
+        width: 200px;
+    }
+    .contacto__main__form__textarea {
+        height: 150px;
     }
 }
