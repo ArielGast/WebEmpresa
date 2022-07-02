@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/252fd0e7cb.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../imagenes/Isotipo2.png">
     <link rel="stylesheet"  href="../style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>DURATEC - TUTORIALES</title>
 </head>
-<body>
+<body class="body">
     <header>        
         <nav class="header__nav">
             <a href ="../index.html"> <img class="header__nav__img" src="../imagenes/logo-duratec-2.png" alt="logo Duratec"></a> 
@@ -26,31 +27,27 @@
     </header>
     <main class="tutoriales__main">
         <h1>TUTORIALES</h1>
-        <section>
-            <div class="tutoriales__main__section__div1">
-                <article>
-                    <iframe width="500" height="300" src="https://www.youtube.com/embed/Rx5P34GuS7w" title="Masilla Fórmula Poliéster Duratec." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </article>
-                <article>
-                    <iframe width="500" height="300" src="https://www.youtube.com/embed/NpU2xv0RQOY" title="Masilla Poliester Fina Tradicional Duratec." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </article>
-            </div>
-            <div class="tutoriales__main__section__div2">
-                <article>
-                    <iframe width="500" height="300" src="https://www.youtube.com/embed/hCEYVyYhBvA" title="Masilla UltraLight300 Duratec  - LINEA SMART-FILL" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </article>
-            </div>
+        <section class="tutoriales__main__section">
+                <div class="tutoriales__main__section__div video1">
+                    <iframe src="https://www.youtube.com/embed/Rx5P34GuS7w" title="Masilla Fórmula Poliéster Duratec." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="tutoriales__main__section__div video2">
+                    <iframe  src="https://www.youtube.com/embed/NpU2xv0RQOY" title="Masilla Poliester Fina Tradicional Duratec." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="tutoriales__main__section__div video3">
+                    <iframe  src="https://www.youtube.com/embed/hCEYVyYhBvA" title="Masilla UltraLight300 Duratec  - LINEA SMART-FILL" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
         </section>
     </main>
-    <footer class="footer">
-        <div class="footer__div">
-            <img class="footer__div__img" src="../imagenes/logo-Strato.png" alt="logo empresa">
-            <ul class="footer__div__ul">
-                <li><a class ="footer__div__ul__li__a" href="https://www.instagram.com/duratec.oficial" target="_blank"><img class="footer__div__ul__li__a__imgInst" src="../imagenes/instagram-logo.png" alt="Instagram"></a></li>
-                <li><a class ="footer__div__ul__li__a" href="https://www.linkedin.com/in/stratosrl" target="_blank"><img class="footer__div__ul__li__a__imgLink" src="../imagenes/linkedin-logo.png" alt="Linkedin"></a></li>
-            </ul>
+    <footer class="footer__sinGrid">
+        <div class="footer__sinGrid__div">
+            <img class="footer__sinGrid__div__img" src="../imagenes/logo-Strato.png" alt="logo empresa">
+            <span>Todos los derechos reservados</span>
         </div>
-        <span>Todos los derechos reservados</span>
-    </footer>   
+        <ul class="footer__sinGrid__ul">
+            <li><a class ="footer__sinGrid__ul__li__a" href="https://www.instagram.com/duratec.oficial" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a class ="footer__sinGrid__ul__li__a" href="https://www.linkedin.com/in/stratosrl" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+        </ul>
+    </footer>
 </body>
 </html>
