@@ -36,7 +36,7 @@ header {
 }
 .header__nav__img {
     width: 100%;
-    margin-left: 20px;
+    margin-left: 15%;
 }
 .header__nav__ul {
     display: flex;
@@ -155,114 +155,44 @@ main {
     justify-content: space-between;
     width: 90%;
 }
-.footer__div {
+.footer__div,
+.footer__sinGrid__div {
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-items: flex-start;
 }
-.footer__div span {
+.footer__div span,
+.footer__sinGrid__div span {
     color: rgb(48, 7, 95);
-    font-size: 0.8rem;
+    font-size: 14px;
 }
-.footer__ul {
+.footer__ul,
+.footer__sinGrid__ul {
     display: flex;
     list-style: none;
 }
-.footer__ul li {
+.footer__ul li,
+.footer__sinGrid__ul li {
     margin-left: 20px;
-    font-size: 4rem;
+    font-size: 52px;
 } 
-.footer__ul__li__a {
+.footer__ul__li__a,
+.footer__sinGrid__ul__li__a {
     color: rgb(241, 42, 28);
     padding: auto;
 }
-/* Media Querie Index */
 
-@media screen and (max-width: 768px) {
-    .body__index {
-        grid-template-rows: 60px 1fr 85px; 
-    } 
-    .header__nav__ul li a {
-        font-size: 1rem;
-    }
-    .article__aside h3 {
-        font-size: 1rem;
-    }
-    .article__aside__ul li {
-        font-size: 0.8rem;
-    }
-    .main__index__article h1 {
-        font-size: 2rem;
-    }
-    .main__index__article__section h2,
-    .main__index__article__section2 h2 {
-    font-size: 1.5rem;
-    text-shadow: 1px 1px rgb(107, 157, 223);
-    }
-    .main__index__article__section p {
-        font-size: 0.8rem;
-    }
-    .main__index__article__section2__div2__ul li {
-        font-size: 0.8rem;
-    }
-    .footer__ul li {
-        font-size: 2rem;
-    } 
-    .footer__img {
-        width: 70%;
-    }
-    .footer__div span {
-        font-size: 0.6rem;
-    }
-}
-@media screen and (max-width: 320px) {
-    .body__index {
-        grid-template-rows: 25px 1fr 50px; 
-    } 
-    .header__nav__ul li a {
-        font-size: 0.5rem;
-    }
-    .article__aside h3 {
-        font-size: 0.7rem;
-    }
-    .article__aside__ul li {
-        font-size: 0.3rem;
-    }
-    .main__index__article h1 {
-        font-size: 0.8rem;
-    }
-    .main__index__article__section h2,
-    .main__index__article__section2 h2 {
-    font-size: 0.9rem;
-    text-shadow: 1px 1px rgb(107, 157, 223);
-    }
-    .main__index__article__section p {
-        font-size: 0.4rem;
-    }
-    .main__index__article__section2__div2__ul li {
-        font-size: 0.3rem;
-    }
-    .footer__ul li {
-        font-size: 1rem;
-    } 
-    .footer__img {
-        width: 40%;
-    }
-    .footer__div span {
-        font-size: 0.3rem;
-    }
-}
 /* Productos */
 
 .productos__main__section1 {
     display: grid;
     grid-template-columns: repeat(3,300px);
-    grid-template-rows: repeat(4,300px);
+    grid-template-rows: repeat(4,400px);
     width: 100%;
     justify-content: center;
     align-items: center;
-    grid-gap: 10px 20px;
+    grid-gap: 5% 10%;
 }
 .productos__main__section1__article {
     display: flex;
@@ -270,23 +200,144 @@ main {
     flex-direction: column;
 }
 .productos__main__section1__img {
-    width: 200px;
+    object-fit: contain;
 }
 .productos__main__section1__img:hover {
-    transform: scale(1.8);
+    transform: scale(1.6);
 }
 .productos__main__section1__article p {
     text-align: left;
-    font-size: 20px;
-    font-weight: 500;
-    opacity: 0.7;
+    font-size: 18px;
+    font-weight: 700;
+    opacity: 0.9;
+    text-transform: uppercase;
+    color:darkorange;
 }
-
 .footer__sinGrid {
-    margin-top: 5%;
+    margin-top: 20%;
     margin-left: 2%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 90%;
+}
+
+
+
+
+
+/* Media Querie 768px */
+
+@media screen and (max-width: 768px) {
+    .body__index {
+        grid-template-rows: 60px 1fr 85px; 
+    } 
+    .header__nav__ul li a {
+        font-size: 16px;
+    }
+    .article__aside h3 {
+        font-size: 16px;
+    }
+    .article__aside__ul li {
+        font-size: 14px;
+    }
+    .main__index__article h1 {
+        font-size: 32px;
+    }
+    .main__index__article__section h2,
+    .main__index__article__section2 h2,
+    .productos__main h1 {
+    font-size: 24px;
+    text-shadow: 1px 1px rgb(107, 157, 223);
+    }
+    .main__index__article__section p {
+        font-size: 14px;
+    }
+    .main__index__article__section2__div2__ul li {
+        font-size: 14px;
+    }
+    .footer__ul li,
+    .footer__sinGrid__ul {
+        font-size: 32px;
+    } 
+    .footer__img,
+    .footer__sinGrid__div__img {
+        width: 70%;
+    }
+    .footer__div span,
+    .footer__sinGrid__div span {
+        font-size: 10px;
+    }
+    .productos__main__section1 {
+        grid-template-columns: repeat(3,150px);
+        grid-template-rows: repeat(4,200px);
+    }
+    .productos__main__section1__img {
+        width: 130px;
+    }
+    .productos__main__section1__article p {
+        font-size: 15px;
+    }
+    .header__nav__ul {
+        margin-right: 5%;
+    }
+}
+/* Media Querie 320px */
+
+@media screen and (max-width: 320px) {
+    .body__index {
+        grid-template-rows: 25px 1fr 50px; 
+    } 
+    .header__nav__ul li a {
+        font-size: 7px;
+    }
+    .article__aside h3 {
+        font-size: 11px;
+    }
+    .article__aside__ul li {
+        font-size: 6px;
+    }
+    .main__index__article h1 {
+        font-size: 14px;
+    }
+    .main__index__article__section h2,
+    .main__index__article__section2 h2,
+    .productos__main h1 {
+        font-size: 15px;
+        text-shadow: 1px 1px rgb(107, 157, 223);
+    }
+    .main__index__article__section p {
+        font-size: 7px;
+    }
+    .main__index__article__section2__div2__ul li {
+        font-size: 5px;
+    }
+    .footer__sinGrid {
+        margin-top: 60%;
+    }
+    .footer__ul li,
+    .footer__sinGrid__ul li {
+        font-size: 16px;
+    } 
+    .footer__img,
+    .footer__sinGrid__div__img {
+        width: 40%;
+    }
+    .footer__div span,
+    .footer__sinGrid__div span {
+        font-size: 5px;
+    }
+    .productos__main__section1 {
+        grid-template-columns: repeat(2,100px);
+        grid-template-rows: auto;
+    }
+    .productos__main__section1__img {
+        width: 80px;
+    }
+    .productos__main__section1__article p {
+        font-size: 8px;
+    }
+    .header__nav__ul {
+        margin-right: 5%;
+    }
 }
