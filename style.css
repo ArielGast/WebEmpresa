@@ -12,7 +12,6 @@ body {
     background-size: cover;
     width: 100%;
 } 
-
 .body__index {
     display: grid;
     grid-template-areas: 
@@ -30,7 +29,6 @@ header {
     display: flex;
     width: 95%;
 }
-
 .header__nav a {
     width: 20%;
 }
@@ -57,7 +55,6 @@ header {
     font-size: 26px;
     font-style: italic;
 }
-
 .header__nav__ul li a:hover {
     color:rgb(247, 168, 21);
 }
@@ -66,20 +63,17 @@ header {
     grid-area: Lateral;
     width: 100%;
 }
-
 .article__aside h3 {
     font-size: 26px;
     text-transform: uppercase;
     font-weight: 600;
     text-align: center;
 }
-
 .article__aside__ul {
     list-style: none;
     text-align: center;
     margin-top: 5%;
 }
-
 .article__aside__ul li {
     font-size: 22px;
     font-weight: 800;
@@ -185,7 +179,6 @@ main {
     color: rgb(241, 42, 28);
     padding: auto;
 }
-
 /* Productos */
 
 .productos__main__section1 {
@@ -206,7 +199,7 @@ main {
     object-fit: contain;
 }
 .productos__main__section1__img:hover {
-    transform: scale(1.6);
+    transform: scale(1.4);
 }
 .productos__main__section1__article p {
     text-align: left;
@@ -224,8 +217,8 @@ main {
     justify-content: space-between;
     width: 90%;
 }
-
 /* Tutoriales */
+
 .tutoriales.main {
     width: 100%;
 }
@@ -253,6 +246,7 @@ main {
     grid-row: 4 / 7;
 }
 /* UBICACION */
+
 .ubicacion__main__section {
     margin-top: 5%;
     display: flex;
@@ -271,6 +265,7 @@ main {
     text-decoration: none;
 }
 /* CONTACTO */
+
 .contacto__main__section {
     display: flex;
     justify-content: space-evenly;
@@ -307,9 +302,6 @@ main {
 .contacto__main__form__textarea {
     height: 200px;
 }
-
-
-
 /* Media Querie 768px */
 
 @media screen and (max-width: 768px) {
