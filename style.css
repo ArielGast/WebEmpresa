@@ -195,13 +195,46 @@ main {
     width: 100%;
     flex-direction: column;
 }
+
+.productos__main__section1__article1 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    position: relative;
+}
+.bell {
+    position: absolute;
+    font-size: 30px;
+    color: rgb(141, 105, 13);
+}
+@keyframes campanada {
+    0%{transform:rotate(0deg);}
+    10%{transform:rotate(5deg);}
+    20%{transform:rotate(10deg);}
+    30%{transform:rotate(15deg);}
+    40%{transform:rotate(20deg);}
+    50%{transform:rotate(25deg);}
+    60%{transform:rotate(-5deg);}
+    70%{transform:rotate(-10deg);}
+    80%{transform:rotate(-15deg);}
+    90%{transform:rotate(-20deg);}
+    100%{transform:rotate(-25deg);}
+}
+.bell i {
+    animation-name: campanada;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.4s;
+    animation-delay: 0s;
+}
 .productos__main__section1__img {
     object-fit: contain;
 }
 .productos__main__section1__img:hover {
     transform: scale(1.4);
 }
-.productos__main__section1__article p {
+.productos__main__section1__article p,
+.productos__main__section1__article1 p {
     text-align: left;
     font-size: 18px;
     font-weight: 700;
