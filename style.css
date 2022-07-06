@@ -179,6 +179,10 @@ main {
     color: rgb(241, 42, 28);
     padding: auto;
 }
+.footer__ul__li__a i:hover {
+    transform: rotate(20deg);
+    color: chartreuse;
+}
 /* Productos */
 
 .productos__main__section1 {
@@ -205,27 +209,49 @@ main {
 .bell {
     position: absolute;
     font-size: 30px;
-    color: rgb(141, 105, 13);
+    color: rgb(255, 0, 0);
 }
 @keyframes campanada {
     0%{transform:rotate(0deg);}
-    10%{transform:rotate(5deg);}
-    20%{transform:rotate(10deg);}
-    30%{transform:rotate(15deg);}
-    40%{transform:rotate(20deg);}
-    50%{transform:rotate(25deg);}
-    60%{transform:rotate(-5deg);}
-    70%{transform:rotate(-10deg);}
-    80%{transform:rotate(-15deg);}
-    90%{transform:rotate(-20deg);}
-    100%{transform:rotate(-25deg);}
+    5%{transform:rotate(5deg);}
+    10%{transform:rotate(10deg);}
+    15%{transform:rotate(15deg);}
+    20%{transform:rotate(20deg);}
+    25%{transform:rotate(25deg);}
+    30%{transform:rotate(20deg);}
+    35%{transform:rotate(15deg);}
+    40%{transform:rotate(10deg);}
+    45%{transform:rotate(5deg);}
+    50%{transform:rotate(0deg);}
+    55%{transform:rotate(-5deg);}
+    60%{transform:rotate(-10deg);}
+    65%{transform:rotate(-15deg);}
+    70%{transform:rotate(-20deg);}
+    75%{transform:rotate(-25deg);}
+    80%{transform:rotate(-20deg);}
+    85%{transform:rotate(-15deg);}
+    90%{transform:rotate(-10deg);}
+    95%{transform:rotate(-5deg);}
+    100%{transform:rotate(0deg);}
 }
 .bell i {
     animation-name: campanada;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-    animation-duration: 0.4s;
+    animation-duration: 0.5s;
     animation-delay: 0s;
+}
+.New {
+    position: absolute;
+    color: yellow;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    transform: rotate(-45deg);
+    margin-left:10%;
+    border: 1px solid red;
+    border-radius: 100%;
 }
 .productos__main__section1__img {
     object-fit: contain;
