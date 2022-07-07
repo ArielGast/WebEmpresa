@@ -55,8 +55,12 @@ header {
     font-size: 26px;
     font-style: italic;
 }
+.header__nav__ul li:hover {
+    transform: scale(1.03);
+}
 .header__nav__ul li a:hover {
     color:rgb(247, 168, 21);
+    
 }
 /* Index */
 .article__aside {
@@ -91,9 +95,11 @@ main {
     font-size: 70px;
     font-weight: 600;
     font-style: oblique;
-    color: rgb(253, 253, 253);
+    background: linear-gradient(90deg, rgba(222,189,39,1) 0%, rgba(56,150,144,1) 47%, rgba(60,153,15,1) 94%);
+    -webkit-background-clip: text;
+    background-clip: text ;
+    color:transparent;
     text-align: center;
-    text-shadow: 2px 3px rgb(72, 14, 104);
     margin-bottom: 50px;
 }
 .main__index__article__section2 {
@@ -179,7 +185,8 @@ main {
     color: rgb(241, 42, 28);
     padding: auto;
 }
-.footer__ul__li__a i:hover {
+.footer__ul__li__a i:hover,
+.footer__sinGrid__ul__li__a i:hover {
     transform: rotate(20deg);
     color: chartreuse;
 }

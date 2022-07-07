@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/252fd0e7cb.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="../imagenes/Isotipo2.png">
-    <link rel="stylesheet"  href="../style.css">
+    <link rel="stylesheet" href="../style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <title>DURATEC - CONTACTO</title>
 </head>
 <body class="body">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init()</script>
     <header>
         <nav class="header__nav">
-            <a href ="../index.html"> <img class="header__nav__img" src="../imagenes/logo-duratec-2.png" alt="logo Duratec"></a> 
+            <a href="../index.html"> <img class="header__nav__img" src="../imagenes/logo-duratec-2.png"
+                    alt="logo Duratec"></a>
             <ul class="header__nav__ul">
                 <li><a href="../index.html">HOME</a></li>
                 <li><a href="./productos.html" target="_blank">PRODUCTOS</a></li>
@@ -31,27 +38,28 @@
             <img class="contacto__main__section__img" src="../imagenes/Contacto1.jpeg" alt="Contactanos">
             <img class="contacto__main__section__img" src="../imagenes/contacto2.jpg" alt="contactanos">
         </section>
-        <form class="contacto__main__form">
-                <div class="contacto__main__form__div">
-                    <label class="contacto__main__form__label" for="nombre" >Nombre / Razón Social</label>
-                    <input class="contacto__main__form__input" type="text" id="nombre" placeholder="Nombre/Razón Social">
-                    <label class="contacto__main__form__label" for="email">Email</label>
-                    <input class="contacto__main__form__input" type="email" id="email" placeholder="example@mail.com">
-                    <label class="contacto__main__form__label" for="mensaje">Tu Mensaje</label>
-                    <textarea class="contacto__main__form__textarea" id="mensaje" placeholder="Dejanos tu mensaje" cols="30" row="520"></textarea>
-                    <div>
-                        <label class="contacto__main__form__label">Sos Cliente?</label>
-                        <label for="sicliente">Si</label>
-                        <input type="radio" id="sicliente" name="cliente">
-                        <label for="nocliente">No</label>
-                        <input type="radio" id="nocliente" name="cliente">
-                    </div>
-                    <div>
-                        <input type="submit">
-                        <input type="reset">
-                    </div>
+        <form class="contacto__main__form" data-aos="fade-left" data-aos-easing="ease-in-back" data-aos-delay="500">
+            <div class="contacto__main__form__div">
+                <label class="contacto__main__form__label" for="nombre">Nombre / Razón Social</label>
+                <input class="contacto__main__form__input" type="text" id="nombre" placeholder="Nombre/Razón Social">
+                <label class="contacto__main__form__label" for="email">Email</label>
+                <input class="contacto__main__form__input" type="email" id="email" placeholder="example@mail.com">
+                <label class="contacto__main__form__label" for="mensaje">Tu Mensaje</label>
+                <textarea class="contacto__main__form__textarea" id="mensaje" placeholder="Dejanos tu mensaje" cols="30"
+                    row="520"></textarea>
+                <div>
+                    <label class="contacto__main__form__label">Sos Cliente?</label>
+                    <label for="sicliente">Si</label>
+                    <input type="radio" id="sicliente" name="cliente">
+                    <label for="nocliente">No</label>
+                    <input type="radio" id="nocliente" name="cliente">
                 </div>
-            </form>
+                <div>
+                    <input type="submit">
+                    <input type="reset">
+                </div>
+            </div>
+        </form>
     </main>
     <footer class="footer__sinGrid">
         <div class="footer__sinGrid__div">
@@ -59,9 +67,12 @@
             <span>Todos los derechos reservados</span>
         </div>
         <ul class="footer__sinGrid__ul">
-            <li><a class ="footer__sinGrid__ul__li__a" href="https://www.instagram.com/duratec.oficial" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-            <li><a class ="footer__sinGrid__ul__li__a" href="https://www.linkedin.com/in/stratosrl" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a class="footer__sinGrid__ul__li__a" href="https://www.instagram.com/duratec.oficial"
+                    target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a class="footer__sinGrid__ul__li__a" href="https://www.linkedin.com/in/stratosrl" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a></li>
         </ul>
     </footer>
 </body>
+
 </html>
