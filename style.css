@@ -64,6 +64,9 @@ main {
     align-content: center;
     justify-items: flex-start;
 }
+.footer__div__img {
+    width: 20%;
+}
 .footer__div span {
     color: black;
     font-size: 14px;
@@ -85,7 +88,8 @@ main {
     color: rgb(241, 42, 28);
 }
 /* Productos */
-.productos__main h1 {
+.productos__main h1,
+.ubicacion__main h1 {
     text-align: center;
     margin-top: 5%;
     margin-bottom: 5%;
@@ -130,19 +134,15 @@ main {
 .ubicacion__main__section {
     margin-top: 5%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     width: 100%;
 }
-.ubicacion__main__section__div p {
-    font-size: 18px;
-    font-weight: 600;
-    color:rgb(255, 255, 255);
-    padding-left: 2%;
-}
 .ubicacion__main__section__div a {
-    color: red;
+    color: rgb(8, 42, 114);
     text-decoration: none;
+    font-style: italic;
+    text-transform: uppercase;
 }
 /* CONTACTO */
 
