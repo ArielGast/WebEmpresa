@@ -5,12 +5,11 @@ body {
     width: 100%;
     background-color: #dde1e6;
 } 
+
 .nav-item a  {
     color: white;
 }
-.header__nav__img {
-    width: 20%;
-}
+
 
 /* Index */
 
@@ -51,31 +50,6 @@ main {
     font-weight: 700;
     margin-bottom: 60px;
 }
-/*.main__index__article__section2 {
-    width: 100%;
-}
-.main__index__article__section h2,
-.main__index__article__section2 h2,
-.productos__main h1,
-.tutoriales__main h1,
-.ubicacion__main h1,
-.contacto__main h1 {
-    text-align: center;
-    margin: 2% auto;
-    font-size: 56px;
-    font-weight: 600;
-    color: rgb(15, 15, 14);
-    text-transform: uppercase;
-    text-shadow: 3px 3px rgb(91, 103, 119);
-}
-.main__index__article__section2__div2__ul li {
-    padding-top: 5%;
-    padding-right: 2%;
-    font-size: 1.5rem;
-    color: rgb(247, 168, 21);
-    font-weight: 700;
-    text-align:center;
-} */
 .footer {
     margin-top: 5%;
     margin-left: 2%;
@@ -111,98 +85,18 @@ main {
     color: rgb(241, 42, 28);
 }
 /* Productos */
-
-.productos__main__section1 {
-    display: grid;
-    grid-template-columns: repeat(3,300px);
-    grid-template-rows: repeat(4,400px);
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    grid-gap: 5% 10%;
+.productos__main h1 {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-transform: uppercase;
+    color:rgb(32, 32, 173);
+    font-weight: 600;
 }
-.productos__main__section1__article {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
+.card:hover {
+    transform: scale(1.05);
 }
 
-.productos__main__section1__article1 {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    position: relative;
-}
-.bell {
-    position: absolute;
-    font-size: 30px;
-    color: rgb(255, 0, 0);
-}
-@keyframes campanada {
-    0%{transform:rotate(0deg);}
-    5%{transform:rotate(5deg);}
-    10%{transform:rotate(10deg);}
-    15%{transform:rotate(15deg);}
-    20%{transform:rotate(20deg);}
-    25%{transform:rotate(25deg);}
-    30%{transform:rotate(20deg);}
-    35%{transform:rotate(15deg);}
-    40%{transform:rotate(10deg);}
-    45%{transform:rotate(5deg);}
-    50%{transform:rotate(0deg);}
-    55%{transform:rotate(-5deg);}
-    60%{transform:rotate(-10deg);}
-    65%{transform:rotate(-15deg);}
-    70%{transform:rotate(-20deg);}
-    75%{transform:rotate(-25deg);}
-    80%{transform:rotate(-20deg);}
-    85%{transform:rotate(-15deg);}
-    90%{transform:rotate(-10deg);}
-    95%{transform:rotate(-5deg);}
-    100%{transform:rotate(0deg);}
-}
-.bell i {
-    animation-name: campanada;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    animation-duration: 0.5s;
-    animation-delay: 0s;
-}
-.New {
-    position: absolute;
-    color: yellow;
-    font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 900;
-    text-transform: uppercase;
-    transform: rotate(-45deg);
-    margin-left:10%;
-    border: 1px solid red;
-    border-radius: 100%;
-}
-.productos__main__section1__img {
-    object-fit: contain;
-}
-.productos__main__section1__img:hover {
-    transform: scale(1.4);
-}
-.productos__main__section1__article p,
-.productos__main__section1__article1 p {
-    text-align: left;
-    font-size: 18px;
-    font-weight: 700;
-    opacity: 0.9;
-    text-transform: uppercase;
-    color:darkorange;
-}
-.footer__sinGrid {
-    margin-top: 20%;
-    margin-left: 2%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 90%;
-}
 /* Tutoriales */
 
 .tutoriales.main {
@@ -362,21 +256,6 @@ main {
 /* Media Querie 320px */
 
 @media screen and (max-width: 320px) {
-    .body__index {
-        grid-template-rows: 25px 1fr 50px; 
-    } 
-    .header__nav__ul li a {
-        font-size: 7px;
-    }
-    .article__aside h3 {
-        font-size: 11px;
-    }
-    .article__aside__ul li {
-        font-size: 6px;
-    }
-    .main__index__article h1 {
-        font-size: 14px;
-    }
     .main__index__article__section h2,
     .main__index__article__section2 h2,
     .productos__main h1,
