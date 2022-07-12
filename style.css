@@ -3,14 +3,52 @@ body {
     font-family: 'Lato', sans-serif;
     font-family: 'Roboto', sans-serif;
     width: 100%;
-    background-color: #dde1e6;
+    background-color:rgb(240,245,250);
 } 
-
-.nav-item a  {
-    color: white;
+.navbar-collapse {
+    flex-grow: initial;
 }
-
-
+.nav-item a  {
+    color: rgb(240,245,250);
+    font-size: 1.3rem;
+}
+.footer {
+    margin-top: 5%;
+    margin-left: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90%;
+}
+.footer__div {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-items: flex-start;
+}
+.footer__div__img {
+    width: 20%;
+}
+.footer__div span {
+    color: rgb(52, 60, 70);
+    font-size: 0.8rem;
+}
+.footer__ul {
+    display: flex;
+    list-style: none;
+}
+.footer__ul li {
+    margin-left: 15%;
+}  
+.footer__ul__li__a {
+    color: rgb(57,110,176);
+    padding: auto;
+    font-size: 3rem;
+}
+.footer__ul__li__a i:hover {
+    transform: rotate(10deg);
+    color: rgb(96, 115, 139);
+}
 /* Index */
 
 main {
@@ -19,7 +57,7 @@ main {
 .main__div {
     width: 80%;
     height: 50vh;
-    background-color: #d0d7dd;
+    background-color: rgb(225,234,245);
     margin: auto;
     display: flex;
     justify-content: space-evenly;
@@ -50,46 +88,37 @@ main {
     font-weight: 700;
     margin-bottom: 60px;
 }
-.footer {
-    margin-top: 5%;
-    margin-left: 2%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 90%;
+.btn {
+    background-color: rgb(96,115,139);
+    color: rgb(7, 47, 95);
 }
-.footer__div {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-items: flex-start;
+.offcanvas-title {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 500;
 }
-.footer__div__img {
-    width: 20%;
+.offcanvas-body {
+    background-color: rgb(225, 234, 245);
 }
-.footer__div span {
-    color: black;
-    font-size: 14px;
+.offcanvas-body p {
+    font-style: italic;
+    font-size: 1,2rem;
+    font-weight: 500;
 }
-.footer__ul {
-    display: flex;
-    list-style: none;
+.card-title {
+    text-transform: uppercase;
+    font-size: 1,2rem;
+    color: rgb(7, 47, 95);
 }
-.footer__ul li {
-    margin-left: 20px;
-    font-size: 52px;
-} 
-.footer__ul__li__a {
-    color: rgb(6, 41, 107);
-    padding: auto;
-}
-.footer__ul__li__a i:hover {
-    transform: rotate(10deg);
-    color: rgb(241, 42, 28);
+.cardlink {
+    text-decoration: none;
+    color: rgb(96, 115, 139);
+
 }
 /* Productos */
 .productos__main h1,
-.ubicacion__main h1 {
+.ubicacion__main h1,
+.tutoriales__main h1 {
     text-align: center;
     margin-top: 5%;
     margin-bottom: 5%;
@@ -97,38 +126,19 @@ main {
     color:rgb(32, 32, 173);
     font-weight: 600;
 }
+
 .card:hover {
-    transform: scale(1.05);
+    box-shadow: 5px 5px 10px rgb(96,115,139);
 }
 
 /* Tutoriales */
+.video {
+    width: 100%;
+    height: 400px;
+}
 
-.tutoriales.main {
-    width: 100%;
-}
-.tutoriales__main__section {
-    display: grid;
-    grid-template-columns: repeat(2, 500px);
-    grid-template-rows: repeat(6, 120px);
-    grid-gap: 2% 2%;
-    width: 100%;
-    justify-content: center;
-}
-.tutoriales__main__section__div iframe {
-    width: 100%;
-    height: 100%;
-}
-.video1 {
-    grid-row: 1 / 4;
-    width: 100%;
-}
-.video2 {
-    grid-row: 1 / 4;
-}
-.video3 { 
-    grid-column: 1 / 3;
-    grid-row: 4 / 7;
-}
+
+
 /* UBICACION */
 
 .ubicacion__main__section {
@@ -182,20 +192,21 @@ main {
 .contacto__main__form__textarea {
     height: 200px;
 }
+/* Media Querie 991px */
+@media screen and (max-width: 992px) {
+    .nav-item a  {
+        font-size: 0.8rem;
+    }
+}
+
 /* Media Querie 768px */
 
 @media screen and (max-width: 768px) {
-    .body__index {
-        grid-template-rows: 60px 1fr 85px; 
-    } 
-    .header__nav__ul li a {
-        font-size: 16px;
+    .img-logo {
+        width: 50%;
     }
-    .article__aside h3 {
-        font-size: 16px;
-    }
-    .article__aside__ul li {
-        font-size: 14px;
+    .nav-item a  {
+        font-size: 0.6rem;
     }
     .main__index__article h1 {
         font-size: 32px;
@@ -271,19 +282,13 @@ main {
     .main__index__article__section2__div2__ul li {
         font-size: 5px;
     }
-    .footer__sinGrid {
-        margin-top: 60%;
-    }
-    .footer__ul li,
-    .footer__sinGrid__ul li {
+    .footer__ul li {
         font-size: 16px;
     } 
-    .footer__img,
-    .footer__sinGrid__div__img {
+    .footer__img {
         width: 40%;
     }
-    .footer__div span,
-    .footer__sinGrid__div span {
+    .footer__div span {
         font-size: 5px;
     }
     .productos__main__section1 {
