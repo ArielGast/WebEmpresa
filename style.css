@@ -1,16 +1,32 @@
 /* CSS para todas las páginas */
+html {
+    font-size: 18px;
+}
 body {
     font-family: 'Lato', sans-serif;
     font-family: 'Roboto', sans-serif;
     width: 100%;
     background-color:rgb(240,245,250);
 } 
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100000;
+    margin-bottom: 5%;
+}
+.img-logo {
+    width: 80%;
+}
 .navbar-collapse {
     flex-grow: initial;
 }
 .nav-item a  {
     color: rgb(240,245,250);
-    font-size: 1.3rem;
+    font-size: 1rem;
+}
+.nav-item a:hover {
+    color:orange;
+    transform: scale(1.05);
 }
 .footer {
     margin-top: 5%;
@@ -31,7 +47,7 @@ body {
 }
 .footer__div span {
     color: rgb(52, 60, 70);
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }
 .footer__ul {
     display: flex;
@@ -43,7 +59,7 @@ body {
 .footer__ul__li__a {
     color: rgb(57,110,176);
     padding: auto;
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 .footer__ul__li__a i:hover {
     transform: rotate(10deg);
@@ -56,7 +72,7 @@ main {
 }
 .main__div {
     width: 80%;
-    height: 50vh;
+    min-height: 50vh;
     background-color: rgb(225,234,245);
     margin: auto;
     display: flex;
@@ -66,14 +82,13 @@ main {
 .fotoportada1 {
     width: 100%;
 }
-
 .Contenedor_cards {
     display: flex;
     margin-top: 5%;
     justify-content: space-evenly;
 }
 .tituloPrincipal {
-    font-size: 35px;
+    font-size: 1.9rem;
     font-weight: 900;
     font-style: oblique;
     background: linear-gradient(90deg, rgb(3, 3, 3) 0%, rgb(60, 76, 224) 47%, rgb(69, 83, 92) 94%);
@@ -81,12 +96,12 @@ main {
     background-clip: text ;
     color:transparent;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 5%;
 }
 .main__div__p {
-    font-size: 20px;
+    font-size: 1.1rem;
     font-weight: 700;
-    margin-bottom: 60px;
+    margin-bottom: 10%;
 }
 .btn {
     background-color: rgb(96,115,139);
@@ -102,7 +117,7 @@ main {
 }
 .offcanvas-body p {
     font-style: italic;
-    font-size: 1,2rem;
+    font-size: 0.95rem;
     font-weight: 500;
 }
 .card-title {
@@ -113,12 +128,12 @@ main {
 .cardlink {
     text-decoration: none;
     color: rgb(96, 115, 139);
-
 }
 /* Productos */
 .productos__main h1,
 .ubicacion__main h1,
-.tutoriales__main h1 {
+.tutoriales__main h1,
+.contacto__main h1 {
     text-align: center;
     margin-top: 5%;
     margin-bottom: 5%;
@@ -126,21 +141,22 @@ main {
     color:rgb(32, 32, 173);
     font-weight: 600;
 }
-
 .card:hover {
     box-shadow: 5px 5px 10px rgb(96,115,139);
 }
-
+.card-title {
+    font-size: 1.2rem;
+    text-align: center;
+}
+.card-text {
+    display: none;
+}
 /* Tutoriales */
 .video {
     width: 100%;
     height: 400px;
 }
-
-
-
 /* UBICACION */
-
 .ubicacion__main__section {
     margin-top: 5%;
     display: flex;
@@ -155,7 +171,6 @@ main {
     text-transform: uppercase;
 }
 /* CONTACTO */
-
 .contacto__main__section {
     display: flex;
     justify-content: space-evenly;
@@ -164,177 +179,123 @@ main {
     width: 300px;
     padding-left: 20px;
 }
-.contacto__main__form__div {
-    color: #b4b4bb;
-    font-weight: 500;
-    margin-top: 40px;
-    width: fit-content;
-    height: fit-content;
-    font-size: 18px;
-    margin-left: 40%;
-    border: 2px solid rgb(139, 139, 139);
-    border-radius: 10px;
-    padding: 5px;
-} 
-.contacto__main__form__div {
+form {
     display: flex;
     flex-direction: column;
-    width: fit-content;
-    justify-content: center;
+    align-items: left;
+    width: 30%;
+    border: solid 2px rgb(96,115,139);
+    border-radius: 10px;
+    margin: 10% auto;
+    padding: 3%;
+    background-color: rgb(225,234,245);
 }
-.contacto__main__form__label {
-    padding: 10px;
+.form-label {
+    font-size: 0.9rem;
 }
-.contacto__main__form__input {
-    height: 25px;
-    width: 200px;
+.botonera {
+    display: inline-block;
 }
-.contacto__main__form__textarea {
-    height: 200px;
-}
-/* Media Querie 991px */
-@media screen and (max-width: 992px) {
-    .nav-item a  {
-        font-size: 0.8rem;
-    }
-}
+.btn2 {
+    width: 35%;
+    margin-top: 5%;
+    background-color: rgb(57,110,176);
+    color:white;
+    border-radius: 10px;
+    font-weight: 700;
+} 
 
-/* Media Querie 768px */
+/* Media Query 768px */
 
 @media screen and (max-width: 768px) {
-    .img-logo {
-        width: 50%;
-    }
-    .nav-item a  {
-        font-size: 0.6rem;
-    }
-    .main__index__article h1 {
-        font-size: 32px;
-    }
-    .main__index__article__section h2,
-    .main__index__article__section2 h2,
-    .productos__main h1,
-    .tutoriales__main h1,
-    .ubicacion__main h1,
-    .contacto__main h1 {
-        font-size: 24px;
-        text-shadow: 1px 1px rgb(107, 157, 223);
-    }
-    .main__index__article__section p {
-        font-size: 14px;
-    }
-    .main__index__article__section2__div2__ul li {
-        font-size: 14px;
-    }
-    .footer__ul li,
-    .footer__sinGrid__ul {
-        font-size: 32px;
-    } 
-    .footer__img,
-    .footer__sinGrid__div__img {
-        width: 70%;
-    }
-    .footer__div span,
-    .footer__sinGrid__div span {
-        font-size: 10px;
-    }
-    .productos__main__section1 {
-        grid-template-columns: repeat(3,150px);
-        grid-template-rows: repeat(4,200px);
-    }
-    .productos__main__section1__img {
-        width: 130px;
-    }
-    .productos__main__section1__article p {
+    html {
         font-size: 15px;
     }
-    .header__nav__ul {
-        margin-right: 5%;
+    .img-logo {
+        width: 35%;
     }
-    .tutoriales__main__section {
-        grid-template-columns: repeat(2, 350px);
-        grid-template-rows: repeat(6, 80px);
-        grid-gap: 1% 1%;
-    }
+    .footer__div__img {
+        width: 35%;
+    }    
+  
     .ubicacion__main__section iframe {
         width: 320px;
         height: 213px;
     }
-    .ubicacion__main__section__div p {
-        font-size: 12px;
+}
+
+/* Media Query 600px */
+
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 14px;
+    }
+    .columna2 {
+        display: none;
+    }
+    .tituloPrincipal {
+        margin-top: 15%;
+    }
+    .Contenedor_cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card1 {
+        margin-bottom: 3%;
+    }
+    .footer__div__img{
+        width: 45%;
+    }
+    .ubicacion__main__section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .card-ubicacion {
+        margin-top: 10%;
+    }
+    .ubicacion__main__section iframe {
+        width: 300px;
+        height: 190px;
+    }
+    .contacto__main__section__img {
+        display: none;
+    }
+    form {
+        width: 50%;
     }
 }
+
+/* Media Query 425px  */
+
+@media screen and (max-width: 425px) {
+    html {
+        font-size: 12px;
+    }
+    .video {
+        height: 300px;
+        width: 90%;
+    }
+}
+
 /* Media Querie 320px */
 
 @media screen and (max-width: 320px) {
-    .main__index__article__section h2,
-    .main__index__article__section2 h2,
-    .productos__main h1,
-    .tutoriales__main h1,
-    .ubicacion__main h1,
-    .contacto__main h1 {
-        font-size: 15px;
-        text-shadow: 1px 1px rgb(107, 157, 223);
+    html {
+        font-size: 10px;
     }
-    .main__index__article__section p {
-        font-size: 7px;
+    .tituloPrincipal {
+        margin-top: 5%;
     }
-    .main__index__article__section2__div2__ul li {
-        font-size: 5px;
-    }
-    .footer__ul li {
-        font-size: 16px;
-    } 
-    .footer__img {
-        width: 40%;
-    }
-    .footer__div span {
-        font-size: 5px;
-    }
-    .productos__main__section1 {
-        grid-template-columns: repeat(2,100px);
-        grid-template-rows: auto;
-    }
-    .productos__main__section1__img {
-        width: 80px;
-    }
-    .productos__main__section1__article p {
-        font-size: 8px;
-    }
-    .header__nav__ul {
-        margin-right: 5%;
-    }
-    .tutoriales__main__section {
-        grid-template-columns: repeat(2, 150px);
-        grid-template-rows: repeat(6, 50px);
-        grid-gap: 1% 1%;
+    .footer__div__img {
+        width: 60%;
     }
     .ubicacion__main__section iframe {
         width: 200px;
         height: 100px;
     }
-    .ubicacion__main__section__div p {
-        font-size: 8px;
-    }
     .contacto__main__section__img {
         display: none;
-    }
-    .contacto__main__form__div {
-        margin-top: 20px;
-        width: fit-content;
-        height: fit-content;
-        font-size: 12px;
-        margin-left: 10%;
-        padding: 2px;
-    } 
-    .contacto__main__form__label {
-        padding: 5px;
-    }
-    .contacto__main__form__input {
-        height: 25px;
-        width: 200px;
-    }
-    .contacto__main__form__textarea {
-        height: 150px;
     }
 }
