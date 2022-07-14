@@ -123,18 +123,34 @@ main {
     text-decoration: none;
     color: rgb(96, 115, 139);
 }
+.card-index1 {
+    display: flex;
+    align-items: center;
+}
 .card-body__span {
     font-size: 0.7rem;
     display: none;
     font-weight: 600;
-
 }
 .cardlink:hover {
-    transform:rotate(5deg);
+    font-weight: 800;
     color:blue;
+}
+@keyframes colores {
+    0%{color: #b0adab;}
+    25%{color: #ed670e;}
+    50%{color: #ed0ee8;}
+    75%{color: #0eed55;}
+    100%{color: #00a4cb;}
+    
 }
 .cardlink:hover + .card-body__span {
     display: block;
+    margin-left: 3%;
+    animation-name: colores;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-delay: 0.2s;
 
 }
 /* Productos */
