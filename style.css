@@ -8,12 +8,6 @@ body {
     width: 100%;
     background-color:rgb(240,245,250);
 } 
-header {
-    position: sticky;
-    top: 0;
-    z-index: 100000;
-    margin-bottom: 5%;
-}
 .img-logo {
     width: 80%;
 }
