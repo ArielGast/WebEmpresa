@@ -18,6 +18,9 @@ body {
     color: rgb(240,245,250);
     font-size: 1rem;
 }
+.active {
+    color:orange !important;
+}
 .nav-item a:hover {
     color:orange;
     transform: scale(1.05);
@@ -99,8 +102,8 @@ main {
     margin-bottom: 10%;
 }
 .btn {
-    background-color: rgb(96,115,139);
-    color: rgb(7, 47, 95);
+    background-color: rgba(96, 115, 139, 0.774);
+    color: rgb(255, 255, 255);
 }
 .offcanvas-title {
     text-transform: uppercase;
