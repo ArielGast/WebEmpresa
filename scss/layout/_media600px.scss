@@ -1,0 +1,45 @@
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 14px;
+    }
+    .columna2 {
+        display: none;
+    }
+    .tituloPrincipal {
+        margin-top: 15%;
+    }
+    .Contenedor_cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card1 {
+        margin-bottom: 3%;
+    }
+    .footer__div__img{
+        width: 45%;
+    }
+    .ubicacion__main__section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .card-ubicacion {
+        margin-top: 10%;
+    }
+    .ubicacion__main__section {
+        iframe {
+            width: 300px;
+            height: 190px;
+        }
+    }
+    .contacto__main__section__img {
+        display: none;
+    }
+    form {
+        width: 50%;
+    }
+    .card-descripcion {
+        font-size: 1.2rem;
+    }
+}

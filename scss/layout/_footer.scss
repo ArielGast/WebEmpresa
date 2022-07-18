@@ -1,0 +1,38 @@
+
+.footer {
+    margin-top: 5%;
+    margin-left: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90%;
+}
+.footer__div {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-items: flex-start;
+}
+.footer__div__img {
+    width: 20%;
+}
+.footer__div span {
+    color: $color-1;
+    font-size: 0.7rem;
+}
+.footer__ul {
+    display: flex;
+    list-style: none;
+        li {
+            margin-left: 15%;
+                a {
+                    color: $color-2;
+                    padding: auto;
+                    font-size: 2.5rem;            
+                        i:hover {
+                        transform: rotate(10deg);
+                        color: $color-3;
+                }
+            }
+        }
+}

@@ -1,0 +1,17 @@
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 15px;
+    }
+    .img-logo {
+        width: 35%;
+    }
+    .footer__div__img {
+        width: 35%;
+    }
+    .ubicacion__main__section {
+        iframe {
+            width: 320px;
+            height: 213px;
+        }
+    }
+}   

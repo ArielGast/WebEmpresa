@@ -1,0 +1,221 @@
+/* Importando fonts Roboto y Lato */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 18px; }
+
+.img-logo {
+  width: 80%; }
+
+.navbar-collapse {
+  flex-grow: initial; }
+
+.nav-item a {
+  color: #f0f5fa;
+  font-size: 1rem; }
+  .nav-item a:hover {
+    color: orange;
+    transform: scale(1.05); }
+
+.active {
+  color: orange !important; }
+
+.footer {
+  margin-top: 5%;
+  margin-left: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 90%; }
+
+.footer__div {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-items: flex-start; }
+
+.footer__div__img {
+  width: 20%; }
+
+.footer__div span {
+  color: #343c46;
+  font-size: 0.7rem; }
+
+.footer__ul {
+  display: flex;
+  list-style: none; }
+  .footer__ul li {
+    margin-left: 15%; }
+    .footer__ul li a {
+      color: #396eb0;
+      padding: auto;
+      font-size: 2.5rem; }
+      .footer__ul li a i:hover {
+        transform: rotate(10deg);
+        color: #60738b; }
+
+main {
+  width: 100%; }
+
+.main__div {
+  width: 80%;
+  min-height: 50vh;
+  background-color: #e1eaf5;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+
+.fotoportada1 {
+  width: 100%; }
+
+.Contenedor_cards {
+  display: flex;
+  margin-top: 5%;
+  justify-content: space-evenly; }
+
+.tituloPrincipal {
+  font-size: 1.9rem;
+  font-weight: 900;
+  font-style: oblique;
+  background: linear-gradient(90deg, #030303 0%, #3c4ce0 47%, #45535c 94%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+  margin-bottom: 5%; }
+
+.main__div__p {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 10%; }
+
+.btn {
+  background-color: rgba(96, 115, 139, 0.774);
+  color: white; }
+
+.offcanvas-title {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 500; }
+
+.offcanvas-body {
+  background-color: #e1eaf5; }
+  .offcanvas-body p {
+    font-style: italic;
+    font-size: 0.95rem;
+    font-weight: 500; }
+
+.card-np:hover {
+  box-shadow: 5px 5px 10px #60738b; }
+
+.card-title {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  color: #072f5f; }
+
+@keyframes colores {
+  0% {
+    color: #b0adab; }
+  33% {
+    color: #0f20b8; }
+  66% {
+    color: #b6b30b; }
+  100% {
+    color: #13181a; } }
+
+.cardlink {
+  text-decoration: none;
+  color: #60738b; }
+  .cardlink:hover {
+    font-weight: 800;
+    color: blue; }
+    .cardlink:hover + .card-body__span {
+      display: block;
+      margin-left: 3%;
+      animation-name: colores;
+      animation-iteration-count: infinite;
+      animation-duration: 2s;
+      animation-delay: 0.2s; }
+
+.card-index1 {
+  display: flex;
+  align-items: center; }
+
+.card-body__span {
+  font-size: 0.8rem;
+  display: none;
+  font-weight: 600; }
+
+@media screen and (max-width: 940px) {
+  .card-descripcion {
+    font-size: 0.7rem; } }
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 15px; }
+  .img-logo {
+    width: 35%; }
+  .footer__div__img {
+    width: 35%; }
+  .ubicacion__main__section iframe {
+    width: 320px;
+    height: 213px; } }
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 14px; }
+  .columna2 {
+    display: none; }
+  .tituloPrincipal {
+    margin-top: 15%; }
+  .Contenedor_cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .card1 {
+    margin-bottom: 3%; }
+  .footer__div__img {
+    width: 45%; }
+  .ubicacion__main__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  .card-ubicacion {
+    margin-top: 10%; }
+  .ubicacion__main__section iframe {
+    width: 300px;
+    height: 190px; }
+  .contacto__main__section__img {
+    display: none; }
+  form {
+    width: 50%; }
+  .card-descripcion {
+    font-size: 1.2rem; } }
+
+@media screen and (max-width: 425px) {
+  html {
+    font-size: 12px; }
+  .video {
+    height: 300px;
+    width: 90%; }
+  .img-thumbnail {
+    width: 100%; }
+  .card-descripcion {
+    font-size: 1.2rem; } }
+
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 10px; }
+  .tituloPrincipal {
+    margin-top: 5%; }
+  .footer__div__img {
+    width: 60%; }
+  .ubicacion__main__section iframe {
+    width: 200px;
+    height: 100px; }
+  .contacto__main__section__img {
+    display: none; } }

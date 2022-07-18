@@ -1,0 +1,20 @@
+@media screen and (max-width: 320px) {
+    html {
+        font-size: 10px;
+    }
+    .tituloPrincipal {
+        margin-top: 5%;
+    }
+    .footer__div__img {
+        width: 60%;
+    }
+    .ubicacion__main__section { 
+        iframe {
+            width: 200px;
+            height: 100px;
+        }
+    }
+    .contacto__main__section__img {
+        display: none;
+    }
+}
