@@ -91,3 +91,21 @@ main {
     display: none;
     font-weight: 600;
 }
+.contenedorLogoPrincipal {
+    width: 80%;
+    background-color: $color-3;
+    margin: 3% auto;
+}
+.contenedorSoluciones {
+        ul {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+                li{
+                    list-style: none;
+                        img{
+                            width: 100%;
+                        }
+                }
+        }
+}
