@@ -4,7 +4,7 @@ main {
 .main__div {
     width: 80%;
     min-height: 50vh;
-    background-color: $color-4;
+    background-color: map-get($colores,c4);
     margin: auto;
     display: flex;
     justify-content: space-evenly;
@@ -23,7 +23,7 @@ main {
     font-size: 1.9rem;
     font-weight: 900;
     font-style: oblique;
-    background: $color-mainTitle;
+    background: map-get($colores,c-mainTitle);
     -webkit-background-clip: text;
     background-clip: text ;
     color:transparent;
@@ -36,7 +36,7 @@ main {
     margin-bottom: 10%;
 }
 .btn {
-    background-color: $color-5;
+    background-color: map-get($colores,c5);
     color: white;
 }
 .offcanvas-title {
@@ -45,7 +45,7 @@ main {
     font-weight: 500;
 }
 .offcanvas-body {
-    background-color: $color-4;
+    background-color: map-get($colores,c4);
         p {
             font-style: italic;
             font-size: 0.95rem;
@@ -53,12 +53,12 @@ main {
         }
 }
 .card-np:hover {
-    box-shadow: 5px 5px 10px rgb(96,115,139);
+    box-shadow: 5px 5px 10px map-get($colores,c3);
 }
 .card-title {
     text-transform: uppercase;
     font-size: 1.1rem;
-    color: $color-6;
+    color: map-get($colores,c6);
 }
 @keyframes colores {
     0%{color: #b0adab;}
@@ -68,7 +68,7 @@ main {
 }
 .cardlink {
     text-decoration: none;
-    color: $color-3;
+    color: map-get($colores,c3);
         &:hover {
             font-weight: 800;
             color:blue;
@@ -92,8 +92,7 @@ main {
     font-weight: 600;
 }
 .contenedorLogoPrincipal {
-    width: 80%;
-    background-color: $color-3;
+    width: 70%;
     margin: 3% auto;
 }
 .contenedorSoluciones {

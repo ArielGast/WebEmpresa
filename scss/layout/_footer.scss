@@ -1,38 +1,60 @@
 
-.footer {
-    margin-top: 5%;
-    margin-left: 2%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 90%;
+@import "../utilities/extend";
+footer{
+    hr{
+        color: map-get($colores,c3);
+        width: 80%;
+        margin: 1% auto;
+    }
 }
-.footer__div {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-items: flex-start;
+.foot {
+    @extend .Flex-sp-around;
+    width: 100%;
+    background-color: rgb(134, 156, 199);
+        div{
+            width: 100%;
+            img{
+                width: 50%;
+            }
+            span{
+                color: map-get($colores,c1);
+                font-size: 1rem;
+                font-family: $font-secundaria;
+            }
+        }
 }
-.footer__div__img {
-    width: 10%;
-}
-.footer__div span {
-    color: $color-1;
-    font-size: 0.7rem;
-}
-.footer__ul {
-    display: flex;
+.foot_nav {
+    width: 100%;
+    @extend .Flex-sp-around;
     list-style: none;
-        li {
-            margin-left: 15%;
-                a {
-                    color: $color-2;
-                    padding: auto;
-                    font-size: 2.5rem;            
-                        i:hover {
-                        transform: rotate(300deg);
-                        color: $color-3;
+        li{
+            padding: auto;
+            a{
+                text-decoration: none;
+                color: map-get($colores,c4);
+                font-size: 2rem;
+                padding: auto;
+                &:hover{
+                    color: map-get($colores,c-nav);
                 }
             }
         }
+}
+.foot_div {
+    ul{
+        display: flex;
+        justify-content: center;
+        list-style: none;
+            li {
+                margin: 3%;
+                    a {
+                        color:map-get($colores,c2);
+                        font-size: 2.5rem;            
+                            i:hover {
+                            transform: rotate(5deg);
+                            color: map-get($colores,c3);
+                            }
+                    }
+            }
+    }
 }

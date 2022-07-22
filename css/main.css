@@ -23,38 +23,52 @@ html {
 .active {
   color: orange !important; }
 
-.footer {
-  margin-top: 5%;
-  margin-left: 2%;
+.Flex-sp-around, .foot, .foot_nav {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  width: 90%; }
+  justify-content: space-around; }
 
-.footer__div {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-items: flex-start; }
+footer hr {
+  color: #60738b;
+  width: 80%;
+  margin: 1% auto; }
 
-.footer__div__img {
-  width: 10%; }
+.foot {
+  width: 100%;
+  background-color: #869cc7; }
+  .foot div {
+    width: 100%; }
+    .foot div img {
+      width: 50%; }
+    .foot div span {
+      color: #343c46;
+      font-size: 1rem;
+      font-family: "Lato", sans-serif; }
 
-.footer__div span {
-  color: #343c46;
-  font-size: 0.7rem; }
-
-.footer__ul {
-  display: flex;
+.foot_nav {
+  width: 100%;
   list-style: none; }
-  .footer__ul li {
-    margin-left: 15%; }
-    .footer__ul li a {
+  .foot_nav li {
+    padding: auto; }
+    .foot_nav li a {
+      text-decoration: none;
+      color: #e1eaf5;
+      font-size: 2rem;
+      padding: auto; }
+      .foot_nav li a:hover {
+        color: orange; }
+
+.foot_div ul {
+  display: flex;
+  justify-content: center;
+  list-style: none; }
+  .foot_div ul li {
+    margin: 3%; }
+    .foot_div ul li a {
       color: #396eb0;
-      padding: auto;
       font-size: 2.5rem; }
-      .footer__ul li a i:hover {
-        transform: rotate(300deg);
+      .foot_div ul li a i:hover {
+        transform: rotate(5deg);
         color: #60738b; }
 
 main {
@@ -151,8 +165,7 @@ main {
   font-weight: 600; }
 
 .contenedorLogoPrincipal {
-  width: 80%;
-  background-color: #60738b;
+  width: 70%;
   margin: 3% auto; }
 
 .contenedorSoluciones ul {
@@ -166,7 +179,9 @@ main {
 
 @media screen and (max-width: 940px) {
   .card-descripcion {
-    font-size: 0.7rem; } }
+    font-size: 0.7rem; }
+  .foot_nav li a i {
+    font-size: 1.4rem; } }
 
 @media screen and (max-width: 768px) {
   html {
@@ -213,6 +228,10 @@ main {
 @media screen and (max-width: 425px) {
   html {
     font-size: 12px; }
+  .foot_logo {
+    display: flex;
+    flex-direction: column;
+    padding: auto; }
   .video {
     height: 300px;
     width: 90%; }
