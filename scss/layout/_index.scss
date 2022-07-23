@@ -1,3 +1,4 @@
+@import "../utilities/mixins";
 main {
     width: 100%;
 }
@@ -20,8 +21,7 @@ main {
     justify-content: space-evenly;
 }
 .tituloPrincipal {
-    font-size: 1.9rem;
-    font-weight: 900;
+    @include estilo-tipograf($font-principal,1.9rem,900);
     font-style: oblique;
     background: map-get($colores,c-mainTitle);
     -webkit-background-clip: text;
@@ -31,8 +31,7 @@ main {
     margin-bottom: 5%;
 }
 .main__div__p {
-    font-size: 1.1rem;
-    font-weight: 700;
+    @include estilo-tipograf($font-secundaria,1.1rem,700);
     margin-bottom: 10%;
 }
 .btn {
@@ -41,23 +40,25 @@ main {
 }
 .offcanvas-title {
     text-transform: uppercase;
-    font-size: 1.6rem;
-    font-weight: 500;
+    @include estilo-tipograf($font-principal,1.6rem,600);
 }
 .offcanvas-body {
     background-color: map-get($colores,c4);
         p {
             font-style: italic;
-            font-size: 0.95rem;
-            font-weight: 500;
+            @include estilo-tipograf($font-secundaria,1.2rem,500);
         }
 }
 .card-np:hover {
     box-shadow: 5px 5px 10px map-get($colores,c3);
 }
+.carousel {
+    width: 90%;
+    margin: auto;
+}
 .card-title {
     text-transform: uppercase;
-    font-size: 1.1rem;
+    @include estilo-tipograf($font-secundaria,1.1rem,400);
     color: map-get($colores,c6);
 }
 @keyframes colores {
@@ -87,9 +88,8 @@ main {
     align-items: center;
 }
 .card-body__span {
-    font-size: 0.8rem;
+    @include estilo-tipograf($font-secundaria,0.8rem,600);
     display: none;
-    font-weight: 600;
 }
 .contenedorLogoPrincipal {
     width: 70%;

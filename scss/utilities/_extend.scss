@@ -1,5 +1,14 @@
+@import "./mixins";
 .Flex-sp-around {
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+.titleDecoration {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-transform: uppercase;
+    @include estilo-tipograf($font-principal,2.5rem,600);
+    color: map-get($colores,c6);
 }

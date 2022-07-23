@@ -11,7 +11,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-        <link rel="stylesheet"  href="../style.css">
+        <link rel="stylesheet"  href="../css/main.css">
         <title>DURATEC - PRODUCTOS</title>
     </head>
     <body class="body">
@@ -45,7 +45,7 @@
             </nav>
         </header>
         <main class="productos__main">
-            <h1>Galeria de Productos</h1>
+            <h1>Galeria de Productos <i class="fa-brands fa-product-hunt"></i></h1>
             <div class="row row-cols-1 row-cols-md-4 g-4">
                 <div class="col">
                     <div class="card card-main">
@@ -169,15 +169,31 @@
                 </div>
             </div>
         </main>
-        <footer class="footer">
-            <div class="footer__div">
-                <img class="footer__div__img" src="../imagenes/LogoStrato2.png" alt="logo empresa">
-                <span>Todos los derechos reservados</span>
+        <footer>
+            <hr>
+            <div class="foot">
+                <div class="foot_logo">                
+                    <img class="foot__div__img" src="../imagenes/Logo2.png" alt="logo empresa">
+                    <span>&copy; 2022 STRATO SRL</span>
+                </div>
+                <div>
+                    <ul class="foot_nav">
+                        <li> <a href="../index.html"><i class="fa-solid fa-house"></i></a></li>
+                        <li> <a href="#"><i class="fa-brands fa-product-hunt"></i></a></li>
+                        <li> <a href="./tutoriales.html"><i class="fa-solid fa-video"></i></a></li>
+                        <li> <a href="./ubicacion.html"><i class="fa-solid fa-location-dot"></i></a></li>
+                        <li> <a href="./contacto.html"><i class="fa-solid fa-bullhorn"></i></a></li>
+                    </u>
+                </div>
+                <div class="foot_div">
+                    <ul>
+                        <li><a class="footer__ul__li__a" href="https://www.instagram.com/duratec.oficial" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a></li>
+                        <li><a class="footer__ul__li__a" href="https://www.linkedin.com/in/stratosrl" target="_blank"><i
+                                    class="fa-brands fa-linkedin"></i></a></li>
+                    </ul>        
+                </div>
             </div>
-            <ul class="footer__ul">
-                <li><a class ="footer__ul__li__a" href="https://www.instagram.com/duratec.oficial" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a class ="footer__ul__li__a" href="https://www.linkedin.com/in/stratosrl" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-            </ul>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
             integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"

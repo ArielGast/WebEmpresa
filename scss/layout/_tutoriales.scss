@@ -1,0 +1,11 @@
+@import "../utilities/mixins";
+@import "../utilities/extend";
+.tutoriales__main{
+    h1{
+        @extend .titleDecoration;
+    }
+}
+.video {
+    width: 100%;
+    height: 400px;
+}

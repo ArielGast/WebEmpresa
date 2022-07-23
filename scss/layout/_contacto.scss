@@ -1,0 +1,40 @@
+@import "../utilities/mixins";
+@import "../utilities/extend";
+.contacto__main{
+    h1{
+        @extend .titleDecoration;
+    }
+    &__section {    
+        display: flex;
+        justify-content: space-evenly;
+        img {
+            width: 300px;
+            padding-left: 20px;
+        }
+    }
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 30%;
+    border: solid 2px rgb(96,115,139);
+    border-radius: 10px;
+    margin: 10% auto;
+    padding: 3%;
+    background-color: rgb(225,234,245);
+}
+.form-label {
+    @include estilo-tipograf($font-secundaria,0.9rem,400);
+}
+.botonera {
+    display: inline-block;
+}
+.btn2 {
+    width: 35%;
+    margin-top: 5%;
+    background-color: rgb(57,110,176);
+    color:white;
+    border-radius: 10px;
+    @include estilo-tipograf($font-secundaria,1rem,700);
+} 
