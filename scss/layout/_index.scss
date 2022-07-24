@@ -20,6 +20,13 @@ main {
     margin-top: 5%;
     justify-content: space-evenly;
 }
+.col {
+    h2 {
+        text-transform: uppercase;
+        @include estilo-tipograf($font-secundaria,1.5rem,600);
+        color: map-get($colores,c2);
+    }
+}
 .tituloPrincipal {
     @include estilo-tipograf($font-principal,1.9rem,900);
     font-style: oblique;
@@ -32,11 +39,27 @@ main {
 }
 .main__div__p {
     @include estilo-tipograf($font-secundaria,1.1rem,700);
-    margin-bottom: 10%;
+    margin-bottom: 3%;
 }
 .btn {
     background-color: map-get($colores,c5);
     color: white;
+}
+.listadoCateg {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    grid-gap: 2%;
+    margin-bottom: 3%;
+    justify-items: center;
+        p {
+            background-color: map-get($colores,c1);
+            color:map-get($colores,c4);
+            @include estilo-tipograf($font-secundaria,1.2rem,400);
+            border-radius: 10px;
+            height: 2rem;
+            width: 100%;
+        }
 }
 .offcanvas-title {
     text-transform: uppercase;

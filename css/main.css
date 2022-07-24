@@ -101,12 +101,19 @@ main {
   margin-top: 5%;
   justify-content: space-evenly; }
 
+.col h2 {
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #396eb0; }
+
 .tituloPrincipal {
   font-family: "Roboto", sans-serif;
   font-size: 1.9rem;
   font-weight: 900;
   font-style: oblique;
-  background: linear-gradient(90deg, #030303 0%, #3c4ce0 47%, #45535c 94%);
+  background: linear-gradient(90deg, #1b4449 0%, #6b75cf 47%, #43a0da 94%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -117,11 +124,28 @@ main {
   font-family: "Lato", sans-serif;
   font-size: 1.1rem;
   font-weight: 700;
-  margin-bottom: 10%; }
+  margin-bottom: 3%; }
 
 .btn {
   background-color: rgba(96, 115, 139, 0.774);
   color: white; }
+
+.listadoCateg {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 2%;
+  margin-bottom: 3%;
+  justify-items: center; }
+  .listadoCateg p {
+    background-color: #343c46;
+    color: #e1eaf5;
+    font-family: "Lato", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    border-radius: 10px;
+    height: 2rem;
+    width: 100%; }
 
 .offcanvas-title {
   text-transform: uppercase;
