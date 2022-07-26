@@ -3,12 +3,12 @@ main {
     width: 100%;
 }
 .main__div {
-    width: 80%;
+    width: 100%;
     min-height: 50vh;
     background-color: map-get($colores,c4);
-    margin: auto;
+    margin: 2% auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 } 
 
@@ -28,14 +28,14 @@ main {
     }
 }
 .tituloPrincipal {
-    @include estilo-tipograf($font-principal,1.9rem,900);
+    @include estilo-tipograf($font-principal,3rem,900);
     font-style: oblique;
     background: map-get($colores,c-mainTitle);
     -webkit-background-clip: text;
     background-clip: text ;
     color:transparent;
     text-align: center;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
 }
 .main__div__p {
     @include estilo-tipograf($font-secundaria,1.1rem,700);
@@ -53,12 +53,13 @@ main {
     margin-bottom: 3%;
     justify-items: center;
         p {
-            background-color: map-get($colores,c1);
+            background-color: map-get($colores,c6);
             color:map-get($colores,c4);
-            @include estilo-tipograf($font-secundaria,1.2rem,400);
+            @include estilo-tipograf($font-secundaria,1rem,400);
             border-radius: 10px;
-            height: 2rem;
+            height: fit-content;
             width: 100%;
+            padding-left: 5%;
         }
 }
 .offcanvas-title {

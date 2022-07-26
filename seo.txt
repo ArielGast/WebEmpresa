@@ -1,0 +1,30 @@
+Aplicando SEO a todos los html.
+
+Breve descripción de lo aplicado a cada html.
+
+En todos los html cambie el lang a "es" y cambie el title haciendo mas refetrencia al contenido de la página
+
+INDEX:
+. Agrego etiqueta meta description: Empresa dedicada a la elaboración y formulación
+  de productos para el Re-pintado y Cosmética Automotor - Pinturas para la Industria Agricola, Feorroviaria - Naval.
+. Agrego etiqueta meta con Keywords: PINTURAS, TUNNING, TRATAMIENTO ACRILICO, TRATAMIENTO TEFLONADO,DETAILING, PASTAS DE PULIR, PULIMENTOS, ABRILLANTADORES, CERAS, MASILLAS, FONDOS, ESMALTES, PRIMER POLIURETANO, BARNIZ POLIURETANO, ESMALTES 2K, FONDO EPOXI,MASILLA NAUTICA, PRODUCTOS NAUTICOS, MASILLA POLIESTER, CHAPA Y PINTURA,FERROVIARIO, FERROCARRIL, MAQUINARIA AGRICOLA, PINTURAS INDUSTRIALES, DURATEC, STRATO">
+
+
+
+CONTACTO:
+. Agrego etiqueta meta description: Ponente en contacto con nostoros. Somos una Empresa dedicada a la elaboración y formulación
+  de productos para el Re-pintado y Cosmética Automotor - Pinturas para la Industria Agricola, Feorroviaria - Naval. DURATEC sinónimo de Soluciones Brillantes.
+. Agrego etiqueta meta con Keywords: PINTURAS, PASTAS DE PULIR, PULIMENTOS, ABRILLANTADORES, CERAS, MASILLAS, FONDOS, ESMALTES, PRIMER POLIURETANO, BARNIZ POLIURETANO, ESMALTES 2K, FONDO EPOXI,MASILLA NAUTICA, PRODUCTOS NAUTICOS, MASILLA POLIESTER, CHAPA Y PINTURA, FERROVIARIO, FERROCARRIL, MAQUINARIA AGRICOLA, PINTURAS INDUSTRIALES, CONTACTO, CONTACTANOS, DURATEC, STRATO, TRATAMIENTOS, TUNNIG, DETAILING">
+
+
+PRODUCTOS:
+. Agrego etiqueta meta description: Nuestros Productos. Sección donde podrás encontrar productos para cada una de las necesidades, sean en Repintura Autromotriz como en el tratamiendo y cuidado posterior de la superficie.
+. Agrego etiqueta meta con Keywords: PINTURAS, PASTAS DE PULIR, PULIMENTOS, ABRILLANTADORES, CERAS, POLISH CLASICO, SELLADORES, BELLEZA AUTOMOTOR, REPINTANDO AUTOMOTOR, MASILLA POLIESTER, DURATEC, STRATO
+
+TUTORIALES:
+.Agrego etiqueta meta description: Video tutoriales donde te enseñamos los conceptos básicos y puedas aplicar nuestros prodcutos adecuadamente y puedas lograr un trabajo excelente.
+.Agrego etiqueta meta con Keywords: PINTURAS, PASTAS DE PULIR, PULIMENTOS, ABRILLANTADORES, CERAS, POLISH CLASICO, SELLADORES, BELLEZA AUTOMOTOR, REPINTANDO AUTOMOTOR, MASILLA POLIESTER, DURATEC, STRATO, TUTORIALES, CONSEJOS
+
+UBICACION:
+.Agrego etiqueta meta description: Nuestra planta y oficina se encuentra en la zona Oeste de la Ciudad de Rosario - Provincia de Santa Fe - Argentina.
+.Agrego etiqueta meta con Keywords: PINTURAS, PASTAS DE PULIR, PULIMENTOS, ABRILLANTADORES, CERAS, POLISH CLASICO, SELLADORES, BELLEZA AUTOMOTOR, REPINTANDO AUTOMOTOR, MASILLA POLIESTER, DURATEC, STRATO, UBICACION, LOCALIZACION, DONDE ESTAMOS.

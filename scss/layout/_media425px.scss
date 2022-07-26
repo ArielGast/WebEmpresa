@@ -2,6 +2,9 @@
     html {
         font-size: 12px;
     }
+    .main__div {
+        min-height: 40vh;
+    }
     .foot_logo {
         display: flex;
         flex-direction: column;

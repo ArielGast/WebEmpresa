@@ -52,8 +52,9 @@ footer hr {
       width: 50%; }
     .foot div span {
       color: #343c46;
+      font-family: "Lato", sans-serif;
       font-size: 1rem;
-      font-family: "Lato", sans-serif; }
+      font-weight: 600; }
 
 .foot_nav {
   width: 100%;
@@ -85,12 +86,12 @@ main {
   width: 100%; }
 
 .main__div {
-  width: 80%;
+  width: 100%;
   min-height: 50vh;
   background-color: #e1eaf5;
-  margin: auto;
+  margin: 2% auto;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center; }
 
 .fotoportada1 {
@@ -110,7 +111,7 @@ main {
 
 .tituloPrincipal {
   font-family: "Roboto", sans-serif;
-  font-size: 1.9rem;
+  font-size: 3rem;
   font-weight: 900;
   font-style: oblique;
   background: linear-gradient(90deg, #1b4449 0%, #6b75cf 47%, #43a0da 94%);
@@ -118,7 +119,7 @@ main {
   background-clip: text;
   color: transparent;
   text-align: center;
-  margin-bottom: 5%; }
+  margin-bottom: 3%; }
 
 .main__div__p {
   font-family: "Lato", sans-serif;
@@ -138,14 +139,15 @@ main {
   margin-bottom: 3%;
   justify-items: center; }
   .listadoCateg p {
-    background-color: #343c46;
+    background-color: #072f5f;
     color: #e1eaf5;
     font-family: "Lato", sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 400;
     border-radius: 10px;
-    height: 2rem;
-    width: 100%; }
+    height: fit-content;
+    width: 100%;
+    padding-left: 5%; }
 
 .offcanvas-title {
   text-transform: uppercase;
@@ -379,8 +381,11 @@ form {
     font-size: 15px; }
   .img-logo {
     width: 35%; }
-  .footer__div__img {
-    width: 35%; }
+  .listadoCateg p {
+    font-size: 0.8rem;
+    width: 90%; }
+  .foot div span {
+    font-size: 0.7rem; }
   .ubicacion__main__section iframe {
     width: 320px;
     height: 213px; } }
@@ -419,6 +424,8 @@ form {
 @media screen and (max-width: 425px) {
   html {
     font-size: 12px; }
+  .main__div {
+    min-height: 40vh; }
   .foot_logo {
     display: flex;
     flex-direction: column;
@@ -434,10 +441,12 @@ form {
 @media screen and (max-width: 320px) {
   html {
     font-size: 10px; }
+  .main__div {
+    min-height: 30vh; }
   .tituloPrincipal {
     margin-top: 5%; }
-  .footer__div__img {
-    width: 60%; }
+  .foot div span {
+    font-size: 0.6rem; }
   .ubicacion__main__section iframe {
     width: 200px;
     height: 100px; }

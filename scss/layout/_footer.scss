@@ -18,8 +18,7 @@ footer{
             }
             span{
                 color: map-get($colores,c1);
-                font-size: 1rem;
-                font-family: $font-secundaria;
+                @include estilo-tipograf($font-secundaria,1rem,600);
             }
         }
 }
