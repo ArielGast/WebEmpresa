@@ -370,12 +370,6 @@ form {
   font-size: 1rem;
   font-weight: 700; }
 
-@media screen and (max-width: 940px) {
-  .card-descripcion {
-    font-size: 0.7rem; }
-  .foot_nav li a i {
-    font-size: 1.4rem; } }
-
 @media screen and (max-width: 768px) {
   html {
     font-size: 15px; }
@@ -403,8 +397,6 @@ form {
     align-items: center; }
   .card1 {
     margin-bottom: 3%; }
-  .footer__div__img {
-    width: 45%; }
   .ubicacion__main__section {
     display: flex;
     flex-direction: column;
