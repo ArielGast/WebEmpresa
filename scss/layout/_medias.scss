@@ -29,6 +29,9 @@
             height: 213px;
         }
     }
+    .contacto__main__section__img {
+        display: none;
+    }
 }   
 
 @media screen and (max-width: 600px) {
@@ -62,9 +65,6 @@
             width: 300px;
             height: 190px;
         }
-    }
-    .contacto__main__section__img {
-        display: none;
     }
     form {
         width: 50%;
@@ -136,10 +136,15 @@
         }
         
     }
+    .ubicacion__main{
+        h1 {
+            font-size: 2rem;
+        }
+    }
     .ubicacion__main__section { 
         iframe {
             width: 200px;
-            height: 100px;
+            height: 250px;
         }
     }
     .card-ubicacion {

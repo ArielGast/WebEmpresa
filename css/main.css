@@ -345,7 +345,7 @@ main {
   display: flex;
   justify-content: space-evenly; }
   .contacto__main__section img {
-    width: 300px;
+    width: 500px;
     padding-left: 20px; }
 
 form {
@@ -391,7 +391,9 @@ form {
     font-size: 1.5rem; }
   .ubicacion__main__section iframe {
     width: 320px;
-    height: 213px; } }
+    height: 213px; }
+  .contacto__main__section__img {
+    display: none; } }
 
 @media screen and (max-width: 600px) {
   html {
@@ -415,8 +417,6 @@ form {
   .ubicacion__main__section iframe {
     width: 300px;
     height: 190px; }
-  .contacto__main__section__img {
-    display: none; }
   form {
     width: 50%; }
   .card-descripcion {
@@ -458,9 +458,11 @@ form {
     margin-top: 5%; }
   .foot div span {
     font-size: 0.6rem; }
+  .ubicacion__main h1 {
+    font-size: 2rem; }
   .ubicacion__main__section iframe {
     width: 200px;
-    height: 100px; }
+    height: 250px; }
   .card-ubicacion {
     width: 16rem; }
   .contacto__main__section__img {
