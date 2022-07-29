@@ -5,7 +5,7 @@
     flex-grow: initial;
 }
 .nav-item a {
-    color:map-get($colores,fondo );
+    color:map-get($colores,c4 );
     font-size: 1rem;
         &:hover{
             color:map-get($colores,c-nav);

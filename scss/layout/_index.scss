@@ -28,21 +28,21 @@ main {
     }
 }
 .tituloPrincipal {
-    @include estilo-tipograf($font-principal,3rem,900);
+    @include estilo-tipograf($font-principal,4rem,900);
     font-style: oblique;
     background: map-get($colores,c-mainTitle);
     -webkit-background-clip: text;
     background-clip: text ;
     color:transparent;
     text-align: center;
-    margin-bottom: 3%;
+    margin: 3% auto;
 }
 .main__div__p {
-    @include estilo-tipograf($font-secundaria,1.1rem,700);
+    @include estilo-tipograf($font-secundaria,1.7rem,700);
     margin-bottom: 3%;
 }
 .btn {
-    background-color: map-get($colores,c5);
+    background-color: map-get($colores,c3);
     color: white;
 }
 .listadoCateg {
@@ -51,15 +51,18 @@ main {
     grid-template-rows: auto;
     grid-gap: 2%;
     margin-bottom: 3%;
-    justify-items: center;
-        p {
-            background-color: map-get($colores,c6);
+    p {
+            background-color: map-get($colores,c1);
             color:map-get($colores,c4);
             @include estilo-tipograf($font-secundaria,1rem,400);
             border-radius: 10px;
             height: fit-content;
             width: 100%;
             padding-left: 5%;
+            &:hover {
+                background-color: map-get($colores,c4);
+                color: map-get($colores,c1);
+            }
         }
 }
 .offcanvas-title {
@@ -73,8 +76,15 @@ main {
             @include estilo-tipograf($font-secundaria,1.2rem,500);
         }
 }
-.card-np:hover {
-    box-shadow: 5px 5px 10px map-get($colores,c3);
+.card-np {
+    width: 18rem;
+    margin: 3%;
+    &:hover {
+        box-shadow: 10px 10px 15px map-get($colores,c3);    
+    }
+    img {
+        height: 30%;
+    }
 }
 .carousel {
     width: 90%;
@@ -82,28 +92,29 @@ main {
 }
 .card-title {
     text-transform: uppercase;
-    @include estilo-tipograf($font-secundaria,1.1rem,400);
-    color: map-get($colores,c6);
+    @include estilo-tipograf($font-secundaria,1.1rem,800);
+    color: map-get($colores,c1);
+    text-decoration: underline;
 }
 @keyframes colores {
-    0%{color: #b0adab;}
-    33%{color: #0f20b8;}
-    66%{color: #b6b30b;}
-    100%{color: #13181a;}
+    0%{color: map-get($colores,c2);}
+    33%{color: map-get($colores,c3);}
+    66%{color: map-get($colores,c1);}
+    100%{color: map-get($colores,c6);}
 }
 .cardlink {
     text-decoration: none;
-    color: map-get($colores,c3);
+    animation-name: colores;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+    animation-delay: 0.2s;    
         &:hover {
+            animation: none;
             font-weight: 800;
-            color:blue;
+            color: map-get($colores,c-nav);
                 +.card-body__span{
                     display: block;
                     margin-left: 3%;
-                    animation-name: colores;
-                    animation-iteration-count: infinite;
-                    animation-duration: 2s;
-                    animation-delay: 0.2s;    
                 }         
         }
 }

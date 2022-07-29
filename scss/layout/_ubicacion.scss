@@ -21,9 +21,12 @@
         }
     }
 }
+.card-ubicacion {
+    width: 18rem;
+}
 .card-body {
         a{
-            color: map-get($colores,c6);
+            color: map-get($colores,c1);
             text-decoration: none;
             font-style: italic;
             text-transform: uppercase;

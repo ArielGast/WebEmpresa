@@ -14,7 +14,7 @@ html {
   flex-grow: initial; }
 
 .nav-item a {
-  color: #f0f5fa;
+  color: #e1eaf5;
   font-size: 1rem; }
   .nav-item a:hover {
     color: orange;
@@ -35,8 +35,7 @@ html {
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
   font-size: 2.5rem;
-  font-weight: 600;
-  color: #072f5f; }
+  font-weight: 600; }
 
 footer hr {
   color: #60738b;
@@ -111,24 +110,24 @@ main {
 
 .tituloPrincipal {
   font-family: "Roboto", sans-serif;
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 900;
   font-style: oblique;
-  background: linear-gradient(90deg, #1b4449 0%, #6b75cf 47%, #43a0da 94%);
+  background: linear-gradient(90deg, #1b4449 0%, #6b75cf 47%, #45e468 94%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   text-align: center;
-  margin-bottom: 3%; }
+  margin: 3% auto; }
 
 .main__div__p {
   font-family: "Lato", sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.7rem;
   font-weight: 700;
   margin-bottom: 3%; }
 
 .btn {
-  background-color: rgba(96, 115, 139, 0.774);
+  background-color: #60738b;
   color: white; }
 
 .listadoCateg {
@@ -136,10 +135,9 @@ main {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   grid-gap: 2%;
-  margin-bottom: 3%;
-  justify-items: center; }
+  margin-bottom: 3%; }
   .listadoCateg p {
-    background-color: #072f5f;
+    background-color: #343c46;
     color: #e1eaf5;
     font-family: "Lato", sans-serif;
     font-size: 1rem;
@@ -148,6 +146,9 @@ main {
     height: fit-content;
     width: 100%;
     padding-left: 5%; }
+    .listadoCateg p:hover {
+      background-color: #e1eaf5;
+      color: #343c46; }
 
 .offcanvas-title {
   text-transform: uppercase;
@@ -163,8 +164,13 @@ main {
     font-size: 1.2rem;
     font-weight: 500; }
 
-.card-np:hover {
-  box-shadow: 5px 5px 10px #60738b; }
+.card-np {
+  width: 18rem;
+  margin: 3%; }
+  .card-np:hover {
+    box-shadow: 10px 10px 15px #60738b; }
+  .card-np img {
+    height: 30%; }
 
 .carousel {
   width: 90%;
@@ -174,32 +180,32 @@ main {
   text-transform: uppercase;
   font-family: "Lato", sans-serif;
   font-size: 1.1rem;
-  font-weight: 400;
-  color: #072f5f; }
+  font-weight: 800;
+  color: #343c46;
+  text-decoration: underline; }
 
 @keyframes colores {
   0% {
-    color: #b0adab; }
+    color: #396eb0; }
   33% {
-    color: #0f20b8; }
+    color: #60738b; }
   66% {
-    color: #b6b30b; }
-  100% {
-    color: #13181a; } }
+    color: #343c46; }
+  100% { } }
 
 .cardlink {
   text-decoration: none;
-  color: #60738b; }
+  animation-name: colores;
+  animation-iteration-count: infinite;
+  animation-duration: 1.5s;
+  animation-delay: 0.2s; }
   .cardlink:hover {
+    animation: none;
     font-weight: 800;
-    color: blue; }
+    color: orange; }
     .cardlink:hover + .card-body__span {
       display: block;
-      margin-left: 3%;
-      animation-name: colores;
-      animation-iteration-count: infinite;
-      animation-duration: 2s;
-      animation-delay: 0.2s; }
+      margin-left: 3%; }
 
 .card-index1 {
   display: flex;
@@ -236,8 +242,7 @@ main {
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
   font-size: 2.5rem;
-  font-weight: 600;
-  color: #072f5f; }
+  font-weight: 600; }
 
 .card-main {
   position: relative; }
@@ -246,20 +251,22 @@ main {
 
 .card-title {
   font-family: "Lato", sans-serif;
-  font-size: 1.1rem;
-  font-weight: 400;
-  text-align: center; }
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none; }
 
 .card-descripcion {
   color: #e1eaf5;
   padding-left: 0.3rem;
   font-family: "Lato", sans-serif;
   font-size: 1.1rem;
-  font-weight: 300; }
+  font-weight: 500;
+  text-align: left; }
 
 .card-productos {
   position: absolute;
-  background-color: rgba(31, 55, 71, 0.8);
+  background-color: rgba(96, 115, 139, 0.88);
   height: fit-content;
   display: none; }
 
@@ -275,8 +282,7 @@ main {
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
   font-size: 2.5rem;
-  font-weight: 600;
-  color: #072f5f; }
+  font-weight: 600; }
 
 .video {
   width: 100%;
@@ -294,8 +300,7 @@ main {
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
   font-size: 2.5rem;
-  font-weight: 600;
-  color: #072f5f; }
+  font-weight: 600; }
 
 .ubicacion__main {
   margin: 5% auto;
@@ -313,8 +318,11 @@ main {
       width: 600px;
       height: 400px; }
 
+.card-ubicacion {
+  width: 18rem; }
+
 .card-body a {
-  color: #072f5f;
+  color: #343c46;
   text-decoration: none;
   font-style: italic;
   text-transform: uppercase; }
@@ -331,8 +339,7 @@ main {
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
   font-size: 2.5rem;
-  font-weight: 600;
-  color: #072f5f; }
+  font-weight: 600; }
 
 .contacto__main__section {
   display: flex;
@@ -380,6 +387,8 @@ form {
     width: 90%; }
   .foot div span {
     font-size: 0.7rem; }
+  .foot_nav i {
+    font-size: 1.5rem; }
   .ubicacion__main__section iframe {
     width: 320px;
     height: 213px; } }
@@ -390,7 +399,7 @@ form {
   .columna2 {
     display: none; }
   .tituloPrincipal {
-    margin-top: 15%; }
+    font-size: 3rem; }
   .Contenedor_cards {
     display: flex;
     flex-direction: column;
@@ -402,7 +411,7 @@ form {
     flex-direction: column;
     justify-content: space-between; }
   .card-ubicacion {
-    margin-top: 10%; }
+    margin: 5% auto; }
   .ubicacion__main__section iframe {
     width: 300px;
     height: 190px; }
@@ -417,7 +426,9 @@ form {
   html {
     font-size: 12px; }
   .main__div {
-    min-height: 40vh; }
+    min-height: 30vh; }
+  .main__div__p {
+    font-size: 1.5rem; }
   .foot_logo {
     display: flex;
     flex-direction: column;
@@ -430,11 +441,19 @@ form {
   .card-descripcion {
     font-size: 1.2rem; } }
 
+@media screen and (max-width: 375px) {
+  .productos__main h1 {
+    font-size: 2rem; }
+  .foot_nav i {
+    font-size: 1rem; }
+  .foot_div i {
+    font-size: 1.8rem; } }
+
 @media screen and (max-width: 320px) {
-  html {
-    font-size: 10px; }
   .main__div {
     min-height: 30vh; }
+  .main__div__p {
+    font-size: 1.2rem; }
   .tituloPrincipal {
     margin-top: 5%; }
   .foot div span {
@@ -442,5 +461,7 @@ form {
   .ubicacion__main__section iframe {
     width: 200px;
     height: 100px; }
+  .card-ubicacion {
+    width: 16rem; }
   .contacto__main__section__img {
     display: none; } }

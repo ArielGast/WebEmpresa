@@ -7,19 +7,21 @@
 }
 .card-main{
     position: relative;
+
     &:hover .card-productos {
             display: block;
     }
-
 }
 .card-title {
-    @include estilo-tipograf($font-secundaria,1.1rem,400);
+    @include estilo-tipograf($font-secundaria,1rem,600);
     text-align: center;
+    text-decoration: none;
 }
 .card-descripcion {
     color: map-get($colores,c4);
     padding-left: 0.3rem;
-    @include estilo-tipograf($font-secundaria,1.1rem,300);
+    @include estilo-tipograf($font-secundaria,1.1rem,500);
+    text-align: left;
 }
 .card-productos {
     position: absolute;

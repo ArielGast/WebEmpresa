@@ -22,7 +22,7 @@ form {
     border-radius: 10px;
     margin: 10% auto;
     padding: 3%;
-    background-color: rgb(225,234,245);
+    background-color: map-get($colores,c4);
 }
 .form-label {
     @include estilo-tipograf($font-secundaria,0.9rem,400);
@@ -33,7 +33,7 @@ form {
 .btn2 {
     width: 35%;
     margin-top: 5%;
-    background-color: rgb(57,110,176);
+    background-color: map-get($colores,c2);
     color:white;
     border-radius: 10px;
     @include estilo-tipograf($font-secundaria,1rem,700);
