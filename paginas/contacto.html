@@ -52,32 +52,33 @@
                 <img class="contacto__main__section__img" src="../imagenes/Contacto1.jpeg" alt="Contactanos">
                 <img class="contacto__main__section__img" src="../imagenes/contacto2.jpg" alt="contactanos">
             </section>
-            <form>
+            <form id="contact-form"> <!-- Aplicando Emailjs -->
+                <input type="hidden" name="contact_number">
                 <div class="mb-3">
-                    <label for="text1" class="form-label">Nombre y Apellido / Razón Social</label>
-                    <input type="text" class="form-control" id="text1">
+                    <label for="Nombre" class="form-label">Nombre y Apellido / Razón Social</label>
+                    <input type="text" name="Nombre" class="form-control" id="Nombre">
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Correo Electrónico</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <label for="user_email" class="form-label">E-mail</label>
+                    <input type="email" name="user_email" class="form-control" id="user_email" aria-describedby="emailHelp">
                     <div id="emailHelp" class="form-text">Tu correo nunca será compartido a terceros</div>
                 </div>
                 <div class="form-floating">
-                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                    <label for="floatingTextarea2">Dejanos tus comentarios</label>
+                    <textarea class="form-control" name="Mensaje" placeholder="Leave a comment here" id="Mensaje" style="height: 100px"></textarea>
+                    <label for="Mensaje">Dejanos tus comentarios</label>
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                    <label class="form-check-label" for="flexRadioDefault1">
+                <!-- <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadio" id="flexRadio">
+                    <label class="form-check-label" for="flexRadio">
                         Soy Cliente
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                    <label class="form-check-label" for="flexRadioDefault2">
+                    <input class="form-check-input" type="radio" name="flexRadio" id="flexRadio" checked>
+                    <label class="form-check-label" for="flexRadio">
                         No soy cliente
                     </label>
-                </div>
+                </div> -->
                 <div class="botonera">
                     <button type="submit" class="btn2">Enviar</button>
                     <button type="button" class="btn2">Reset</button>
@@ -110,6 +111,29 @@
                 </div>
             </div>
         </footer>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function() {
+                // https://dashboard.emailjs.com/admin/account
+                emailjs.init('oT9Kae2yB4OYN9R1A');
+            })();
+        </script>
+        <script type="text/javascript">
+            window.onload = function() {
+                document.getElementById('contact-form').addEventListener('submit', function(event) {
+                    event.preventDefault();
+                    // generate a five digit number for the contact_number variable
+                    this.contact_number.value = Math.random() * 100000 | 0;
+                    // these IDs from the previous steps
+                    emailjs.sendForm('service_aq5yrie', 'contact_form', this)
+                        .then(function() {
+                            console.log('SUCCESS!');
+                        }, function(error) {
+                            console.log('FAILED...', error);
+                        });
+                });
+            }
+        </script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
             integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
             crossorigin="anonymous"></script>
