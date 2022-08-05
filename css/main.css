@@ -8,14 +8,14 @@ html {
   font-size: 18px; }
 
 .img-logo {
-  width: 80%; }
+  width: 50%; }
 
 .navbar-collapse {
   flex-grow: initial; }
 
 .nav-item a {
   color: #e1eaf5;
-  font-size: 1rem; }
+  font-size: 1.2rem; }
   .nav-item a:hover {
     color: orange;
     transform: scale(1.05); }

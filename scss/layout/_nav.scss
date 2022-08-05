@@ -1,12 +1,12 @@
 .img-logo {
-    width: 80%;
+    width: 50%;
 }
 .navbar-collapse {
     flex-grow: initial;
 }
 .nav-item a {
     color:map-get($colores,c4 );
-    font-size: 1rem;
+    font-size: 1.2rem;
         &:hover{
             color:map-get($colores,c-nav);
             transform: scale(1.05);
