@@ -21,16 +21,16 @@
     @extend .Flex-sp-around;
     width: 100%;
     background-color: rgb(134, 156, 199);
-        div{
-            width: 100%;
-            img{
-                width: 50%;
-            }
-            span{
-                color: map-get($colores,c1);
-                @include estilo-tipograf($font-secundaria,1rem,600);
-            }
+    div{
+        width: 100%;
+        img{
+            width: 50%;
         }
+        span{
+            color: map-get($colores,c1);
+            @include estilo-tipograf($font-secundaria,1rem,600);
+        }
+    }
 }
 .foot_nav {
     width: 100%;
@@ -54,16 +54,16 @@
         display: flex;
         justify-content: center;
         list-style: none;
-            li {
-                margin: 3%;
-                    a {
-                        color:map-get($colores,c2);
-                        font-size: 2.5rem;            
-                            i:hover {
+        li {
+            margin: 3%;
+                a {
+                    color:map-get($colores,c2);
+                    font-size: 2.5rem;            
+                        i:hover {
                             transform: rotate(5deg);
                             color: map-get($colores,c3);
-                            }
-                    }
-            }
+                        }
+                }
+        }
     }
 }
