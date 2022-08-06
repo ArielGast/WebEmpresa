@@ -186,6 +186,9 @@ main {
   width: 90%;
   margin: auto; }
 
+.carousel-item img {
+  width: 100%; }
+
 .card-title {
   text-transform: uppercase;
   font-family: "Lato", sans-serif;
