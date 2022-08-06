@@ -1,11 +1,21 @@
 
 @import "../utilities/extend";
-footer{
-    hr{
-        color: map-get($colores,c3);
-        width: 80%;
-        margin: 1% auto;
+.separador {
+    margin: 2% auto;
+    width: 90vw;
+    height: 0.5vh;
+    animation: rotarcolor 3s infinite ease-in-out;
+}  
+@keyframes rotarcolor {
+    from {
+        background-position: -100vw;
     }
+    to { 
+        background-position: 0vw;
+    }
+}
+.gradiente {
+    background: linear-gradient(to right,  rgba(48,255,144,1) 0%,rgba(237,45,237,1) 25%,rgba(201,152,38,1) 50%,rgba(48,255,230,1) 75%,rgba(48,255,144,1) 100%);
 }
 .foot {
     @extend .Flex-sp-around;

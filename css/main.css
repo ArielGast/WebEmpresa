@@ -37,10 +37,20 @@ html {
   font-size: 2.5rem;
   font-weight: 600; }
 
-footer hr {
-  color: #60738b;
-  width: 80%;
-  margin: 1% auto; }
+.separador {
+  margin: 2% auto;
+  width: 90vw;
+  height: 0.5vh;
+  animation: rotarcolor 3s infinite ease-in-out; }
+
+@keyframes rotarcolor {
+  from {
+    background-position: -100vw; }
+  to {
+    background-position: 0vw; } }
+
+.gradiente {
+  background: linear-gradient(to right, #30ff90 0%, #ed2ded 25%, #c99826 50%, #30ffe6 75%, #30ff90 100%); }
 
 .foot {
   width: 100%;
