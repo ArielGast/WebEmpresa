@@ -97,16 +97,35 @@ main {
     text-decoration: underline;
 }
 @keyframes colores {
-    0%{color: map-get($colores,c2);}
-    33%{color: map-get($colores,c3);}
-    66%{color: map-get($colores,c1);}
-    100%{color: map-get($colores,c6);}
+    0%{color: rgb(119, 0, 255);}
+    10%{color: rgb(162, 26, 252);
+        transform: scale(1.01);}
+    20%{color: rgb(136, 80, 173);
+        transform: scale(1.02);}
+    30%{color: rgb(129, 89, 155);
+        transform: scale(1.03);}
+    40%{color: rgb(197, 96, 228);
+        transform: scale(1.04);}
+    50%{color: rgb(156, 39, 172);
+        transform: scale(1.05);}
+    60%{color: rgb(168, 20, 156);
+        transform: scale(1.04);}
+    70%{color: rgb(150, 38, 150);
+        transform: scale(1.03);}
+    80%{color: rgb(127, 14, 131);
+        transform: scale(1.02);}
+    90%{color: rgb(167, 29, 137);
+        transform: scale(1.01);}
+    100%{color: rgb(110, 56, 146);
+        transform: scale(1);}
+        
 }
 .cardlink {
+    @include estilo-tipograf($font-secundaria,1.1rem,400);
     text-decoration: none;
     animation-name: colores;
     animation-iteration-count: infinite;
-    animation-duration: 1.5s;
+    animation-duration: 2s;
     animation-delay: 0.2s;    
         &:hover {
             animation: none;
@@ -121,6 +140,7 @@ main {
 .card-index1 {
     display: flex;
     align-items: center;
+    background-color: map-get($colores,c4);
 }
 .card-body__span {
     @include estilo-tipograf($font-secundaria,0.8rem,600);
