@@ -285,6 +285,9 @@ main {
   font-size: 2.5rem;
   font-weight: 600; }
 
+.row {
+  margin: auto; }
+
 .video {
   width: 100%;
   height: 400px; }
@@ -440,8 +443,7 @@ form {
     flex-direction: column;
     padding: auto; }
   .video {
-    height: 300px;
-    width: 90%; }
+    height: 300px; }
   .img-thumbnail {
     width: 100%; }
   .card-descripcion {
